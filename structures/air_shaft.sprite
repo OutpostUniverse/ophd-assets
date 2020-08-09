@@ -1,0 +1,18 @@
+<sprite version="0.99">
+	<imagesheet id="main" src="air_shaft.png" />
+	<imagesheet id="ug" src="air_shaft_ug.png" />
+	<imagesheet id="destroyed" src="destroyed.png" />
+
+	<action name="operational">
+		<frame sheetid="main" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	</action>
+	
+	<action name="operational-ug">
+		<frame sheetid="ug" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	</action>
+	
+	<action name="destroyed">
+		<frame sheetid="destroyed" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	</action>
+
+</sprite>

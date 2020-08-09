@@ -1,0 +1,17 @@
+<sprite version="0.99">
+	<imagesheet id="construction" src="construction_02.png" />
+	<imagesheet id="main" src="red_light_district.png" />
+	<imagesheet id="destroyed" src="destroyed.png" />
+
+	<action name="construction">
+		<frame sheetid="construction" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	</action>
+
+	<action name="operational">
+		<frame sheetid="main" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	</action>
+
+	<action name="destroyed">
+		<frame sheetid="destroyed" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	</action>
+</sprite>

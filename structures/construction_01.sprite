@@ -1,0 +1,8 @@
+<sprite version="0.99">
+	<imagesheet id="construction" src="construction_01.png" />
+
+	<action name="operational">
+		<frame sheetid="construction" delay="800" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	</action>
+	
+</sprite>

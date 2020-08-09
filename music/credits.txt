@@ -1,0 +1,6 @@
+track_00.ogg		- Alexandr Zhelanov https://soundcloud.com/alexandr-zhelanov
+track_01.ogg		- Jesús Lastra | Hydrosphere
+track_02.ogg		- Jesús Lastra | Heatstroke
+track_03.ogg		- Jesús Lastra | Slow Down
+track_04.ogg		- Philippe Groarke | Dark ambiance | https://opengameart.org/content/dark-ambiance
+track_05.ogg		- Ville Seppänen | 1 G | https://opengameart.org/content/space-ambient
