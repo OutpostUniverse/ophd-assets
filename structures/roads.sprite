@@ -1,0 +1,25 @@
+<sprite version="0.99">
+	<imagesheet id="main" src="roads.png" />
+	<imagesheet id="construction" src="construction_01.png" />
+	<imagesheet id="destroyed" src="destroyed.png" />
+
+	<action name="construction">
+		<frame sheetid="construction" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	</action>
+
+	<action name="intersection">
+		<frame sheetid="main" delay="-1" x="0" y="0" width="128" height="64" anchorx="0" anchory="0" />
+	</action>
+
+	<action name="right">
+		<frame sheetid="main" delay="-1" x="128" y="0" width="128" height="64" anchorx="0" anchory="0" />
+	</action>
+
+	<action name="left">
+		<frame sheetid="main" delay="-1" x="256" y="0" width="128" height="64" anchorx="0" anchory="0" />
+	</action>
+
+	<action name="destroyed">
+		<frame sheetid="destroyed" delay="-1" x="256" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	</action>
+</sprite>
