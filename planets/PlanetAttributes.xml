@@ -1,0 +1,35 @@
+<Planets>
+	<Planet>
+		<PlanetType>Mercury</PlanetType>
+		<ImagePath>planets/planet_d.png</ImagePath>
+		<Hostility>High</Hostility>
+		<MaxDepth>1</MaxDepth>
+		<MaxMines>10</MaxMines>
+		<MapImagePath>maps/merc_01</MapImagePath>
+		<TilesetPath>tsets/mercury.png</TilesetPath>
+		<Name>Mercury Type</Name>
+		<MeanSolarDistance>0.4</MeanSolarDistance>
+	</Planet>
+	<Planet>
+		<PlanetType>Mars</PlanetType>
+		<ImagePath>planets/planet_c.png</ImagePath>
+		<Hostility>Low</Hostility>
+		<MaxDepth>4</MaxDepth>
+		<MaxMines>30</MaxMines>
+		<MapImagePath>maps/mars_04</MapImagePath>
+		<TilesetPath>tsets/mars.png</TilesetPath>
+		<Name>Mars Type</Name>
+		<MeanSolarDistance>1.524</MeanSolarDistance>
+	</Planet>
+	<Planet>
+		<PlanetType>Ganymede</PlanetType>
+		<ImagePath>planets/planet_e.png</ImagePath>
+		<Hostility>Medium</Hostility>
+		<MaxDepth>2</MaxDepth>
+		<MaxMines>15</MaxMines>
+		<MapImagePath>maps/ganymede_01</MapImagePath>
+		<TilesetPath>tsets/ganymede.png</TilesetPath>
+		<Name>Ganymede Type</Name>
+		<MeanSolarDistance>5.2</MeanSolarDistance>
+	</Planet>
+</Planets>
