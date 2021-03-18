@@ -9,6 +9,7 @@
 		<TilesetPath>tsets/mercury.png</TilesetPath>
 		<Name>Mercury Type</Name>
 		<MeanSolarDistance>0.4</MeanSolarDistance>
+		<Description>Small, hot and not very friendly. This planet resembles our very own Mercury. Close to its parent star, few potential mine locations, very shallow dig depth, no magnetic field and no atmosphere. &#xA; &#xA; The Payoff? The few mines you do get are higher yield and you get plenty of solar energy.</Description>
 	</Planet>
 	<Planet>
 		<PlanetType>Mars</PlanetType>
@@ -20,6 +21,7 @@
 		<TilesetPath>tsets/mars.png</TilesetPath>
 		<Name>Mars Type</Name>
 		<MeanSolarDistance>1.524</MeanSolarDistance>
+		<Description>This planet is a lot like our very own Mars. It is a relatively easy planet to colonize with a marginal atmosphere, lots of potential mining locations and you can dig deep. &#xA; &#xA; This leads to the problem that, while mines are plentiful, they don't yield a lot of resources.</Description>
 	</Planet>
 	<Planet>
 		<PlanetType>Ganymede</PlanetType>
@@ -31,5 +33,6 @@
 		<TilesetPath>tsets/ganymede.png</TilesetPath>
 		<Name>Ganymede Type</Name>
 		<MeanSolarDistance>5.2</MeanSolarDistance>
+		<Description>Like Jupiter's moon Ganymede, this planet contains a sub-surface ocean and a magnetic field. Despite having a magnetic field indicating a liquid core, there is no atmosphere. &#xA; &#xA; This planet tends to be farther from the host star so solar satellites aren't going to be very useful.</Description>
 	</Planet>
 </Planets>
