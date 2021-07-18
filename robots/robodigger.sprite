@@ -1,6 +1,6 @@
 <sprite version="0.99">
 	<imagesheet id="main" src="robodigger.png" />
 	<action name="running">
-		<frame sheetid="main" delay="0" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+		<frame sheetid="main" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
 	</action>
 </sprite>
