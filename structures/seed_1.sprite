@@ -4,14 +4,14 @@
 	<imagesheet id="destroyed" src="destroyed.png" />
 
 	<action name="construction">
-		<frame sheetid="construction" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+		<frame sheetid="construction" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
 	</action>
 
 	<action name="operational">
-		<frame sheetid="main" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+		<frame sheetid="main" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
 	</action>
 
 	<action name="destroyed">
-		<frame sheetid="destroyed" delay="-1" x="128" y="0" width="128" height="128" anchorx="0" anchory="64" />
+		<frame sheetid="destroyed" x="128" y="0" width="128" height="128" anchorx="0" anchory="64" />
 	</action>
 </sprite>
