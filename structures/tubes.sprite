@@ -2,26 +2,26 @@
 	<imagesheet id="main" src="tubes.png" />
 
 	<action name="ag_intersection">
-		<frame sheetid="main" delay="-1" x="0" y="0" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" delay="0" x="0" y="0" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 
 	<action name="ag_right">
-		<frame sheetid="main" delay="-1" x="128" y="0" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" delay="0" x="128" y="0" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 
 	<action name="ag_left">
-		<frame sheetid="main" delay="-1" x="256" y="0" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" delay="0" x="256" y="0" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 
 	<action name="ug_intersection">
-		<frame sheetid="main" delay="-1" x="0" y="64" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" delay="0" x="0" y="64" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 
 	<action name="ug_right">
-		<frame sheetid="main" delay="-1" x="128" y="64" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" delay="0" x="128" y="64" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 
 	<action name="ug_left">
-		<frame sheetid="main" delay="-1" x="256" y="64" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" delay="0" x="256" y="64" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 </sprite>
