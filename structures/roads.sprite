@@ -8,32 +8,32 @@
 	</action>
 
 	<action name="intersection">
-		<frame sheetid="main" delay="0" x="0" y="0" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" x="0" y="0" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 	<action name="right">
-		<frame sheetid="main" delay="0" x="128" y="0" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" ="128" y="0" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 	<action name="left">
-		<frame sheetid="main" delay="0" x="256" y="0" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" ="256" y="0" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 
 	<action name="intersection-decayed">
-		<frame sheetid="main" delay="0" x="0" y="64" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" x="0" y="64" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 	<action name="right-decayed">
-		<frame sheetid="main" delay="0" x="128" y="64" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" x="128" y="64" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 	<action name="left-decayed">
-		<frame sheetid="main" delay="0" x="256" y="64" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" x="256" y="64" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 	
 	<action name="intersection-destroyed">
-		<frame sheetid="main" delay="0" x="0" y="128" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" x="0" y="128" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 	<action name="right-destroyed">
-		<frame sheetid="main" delay="0" x="128" y="128" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main" x="128" y="128" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 	<action name="left-destroyed">
-		<frame sheetid="main" delay="0" x="256" y="128" width="128" height="64" anchorx="0" anchory="0" />
+		<frame sheetid="main"x="256" y="128" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 </sprite>
