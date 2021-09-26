@@ -7,23 +7,33 @@
 		<frame sheetid="construction" delay="-1" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
 	</action>
 
-	<action name="operational">
-		<frame sheetid="main" delay="-1" x="0" y="0" width="128" height="64" anchorx="0" anchory="0" />
+	<action name="intersection">
+		<frame sheetid="main" delay="0" x="0" y="0" width="128" height="64" anchorx="0" anchory="0" />
+	</action>
+	<action name="right">
+		<frame sheetid="main" delay="0" x="128" y="0" width="128" height="64" anchorx="0" anchory="0" />
+	</action>
+	<action name="left">
+		<frame sheetid="main" delay="0" x="256" y="0" width="128" height="64" anchorx="0" anchory="0" />
+	</action>
+
+	<action name="intersection-decayed">
+		<frame sheetid="main" delay="0" x="0" y="64" width="128" height="64" anchorx="0" anchory="0" />
+	</action>
+	<action name="right-decayed">
+		<frame sheetid="main" delay="0" x="128" y="64" width="128" height="64" anchorx="0" anchory="0" />
+	</action>
+	<action name="left-decayed">
+		<frame sheetid="main" delay="0" x="256" y="64" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 	
-	<action name="intersection">
-		<frame sheetid="main" delay="-1" x="0" y="0" width="128" height="64" anchorx="0" anchory="0" />
+	<action name="intersection-destroyed">
+		<frame sheetid="main" delay="0" x="0" y="128" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
-
-	<action name="right">
-		<frame sheetid="main" delay="-1" x="128" y="0" width="128" height="64" anchorx="0" anchory="0" />
+	<action name="right-destroyed">
+		<frame sheetid="main" delay="0" x="128" y="128" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
-
-	<action name="left">
-		<frame sheetid="main" delay="-1" x="256" y="0" width="128" height="64" anchorx="0" anchory="0" />
-	</action>
-
-	<action name="destroyed">
-		<frame sheetid="destroyed" delay="-1" x="256" y="0" width="128" height="128" anchorx="0" anchory="64" />
+	<action name="left-destroyed">
+		<frame sheetid="main" delay="0" x="256" y="128" width="128" height="64" anchorx="0" anchory="0" />
 	</action>
 </sprite>
