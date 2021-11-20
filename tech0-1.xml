@@ -1,0 +1,180 @@
+<technology>
+  <category name="Physics">
+    <tech id="1000" lab_type="0" cost="50">
+      <name>Communications</name>
+      <description>Description Here</description>
+      <effects>
+        <unlock type="structure">SID_COMM_TOWER_2</unlock>
+      </effects>
+    </tech>
+    <tech id="1010" lab_type="1" cost="100">
+      <name>Harsh Environment Signal Processing</name>
+      <requires>1000,5030</requires>
+      <effects>
+        <unlock type="structure">SID_COMM_TOWER_3</unlock>
+      </effects>
+    </tech>
+    <tech id="1020" lab_type="0" cost="50">
+      <name>Radio Signal Amplification</name>
+      <requires>1010</requires>
+    </tech>
+    <tech id="1030" lab_type="0" cost="75">
+      <name>Transponder Arrays</name>
+      <requires>1020,5030</requires>
+    </tech>
+    <tech id="1100" lab_type="1" cost="75">
+      <name>Theoretical Physics</name>
+    </tech>
+    <tech id="1110" lab_type="1" cost="100">
+      <name>Superconductivity</name>
+      <requires>1100</requires>
+    </tech>
+    <tech id="1120" lab_type="1" cost="100">
+      <name>Plasma Containment</name>
+      <requires>1110,3000</requires>
+    </tech>
+  </category>
+  <category name="Material Science">
+    <tech id="3000" lab_type="1" cost="50">
+      <name>Plasma Physics</name>
+    </tech>
+    <tech id="3010" lab_type="1" cost="50">
+      <name>Industrial Plasma</name>
+      <requires>3000</requires>
+    </tech>
+    <tech id="3020" lab_type="1" cost="75">
+      <name>Plasma Processing</name>
+      <requires>3010</requires>
+    </tech>
+    <tech id="3030" lab_type="1" cost="75">
+      <name>Plasma Etching</name>
+      <requires>3020</requires>
+    </tech>
+    <tech id="3040" lab_type="1" cost="75">
+      <name>Plasma Spray</name>
+      <description>Leads to the Improved Structural Maintenance Program. Structure maintenance cost is reduced by 5%.</description>
+      <requires>3010</requires>
+      <effects>
+        <modifier type="maintenance_cost">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="3050" lab_type="1" cost="75">
+      <name>Plasma Gasification</name>
+      <description>Leads to Improved Waste Recycling and Slag Reprocessing. Recycling return rate improved by 5%.</description>
+      <requires>3000</requires>
+      <effects>
+        <modifier type="recycling">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="3060" lab_type="1" cost="100">
+      <name>Plasma Electrolytic Oxidation</name>
+      <description>Leads to the Improved Structural Maintenance Program. Structure maintenance cost is reduced by 5%.</description>
+      <requires>3010</requires>
+      <effects>
+        <modifier type="maintenance_cost">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="3070" lab_type="1" cost="100">
+      <name>Plasma Polymerization</name>
+      <description>Allows for the production of Advanced Synthetic Materials. Reduces structure decay rate by 10%.</description>
+      <requires>3020</requires>
+      <effects>
+        <modifier type="structure_decay">0.1</modifier>
+      </effects>
+    </tech>
+    <tech id="3200" lab_type="0" cost="75">
+      <name>Metallurgy 1</name>
+      <requires>4010</requires>
+    </tech>
+    <tech id="3210" lab_type="0" cost="75">
+      <name>Advanced Materials Processing</name>
+      <requires>3200</requires>
+    </tech>
+    <tech id="3220" lab_type="0" cost="75">
+      <name>Mineral Processing</name>
+      <requires>3200</requires>
+    </tech>
+    <tech id="3230" lab_type="0" cost="100">
+      <name>Smelter Mark II</name>
+      <description>With our breakthroughs in Metallurgy and Miner Processing, our scientists and egineers have proposed a new Smelter design that's much more efficient than the design we have from Earth.</description>
+      <requires>3210,3220</requires>
+      <effects>
+        <unlock type="structure">SID_SMELTER_2</unlock>
+      </effects>
+    </tech>
+    <tech id="3300" lab_type="0" cost="75">
+      <name>Photovoltaic Cells</name>
+      <description>With the knowledge we've gained of building semiconductors in our new environment, our engineers have proposed a new version of the Solar Panel Array that can generate more energy in the specific conditions of our new planet.</description>
+      <requires>5010,6010</requires>
+      <effects>
+        <unlock type="structure">SID_SOLAR_PANEL1</unlock>
+      </effects>
+    </tech>
+  </category>
+  <category name="Planetary Science">
+    <tech id="4000" lab_type="0" cost="50">
+      <name>Geology</name>
+      <description>Study of our new planet</description>
+    </tech>
+    <tech id="4010" lab_type="0" cost="75">
+      <name>Mineralogy</name>
+      <description>Scientific discipline that is concerned with all aspects of our new planet's minerals, including their physical properties, chemical composition, internal crystal structure, and occurrence and distribution</description>
+      <requires>4000</requires>
+    </tech>
+  </category>
+  <category name="Computer Science &amp; Engineering">
+    <tech id="5000" lab_type="0" cost="50">
+      <name>Electronics</name>
+      <description>It won't be long before our computer and electronics equipment starts to fail. We need to investigate methods of build new electronic components and circuits with the local materials of our new planet.</description>
+    </tech>
+    <tech id="5010" lab_type="0" cost="75">
+      <name>Semiconductors</name>
+      <requires>5000</requires>
+    </tech>
+    <tech id="5020" lab_type="0" cost="75">
+      <name>Integrated Circuits</name>
+      <requires>5010</requires>
+    </tech>
+    <tech id="5030" lab_type="1" cost="100">
+      <name>Advanced Integrated Circuits</name>
+      <requires>5020,3030</requires>
+    </tech>
+    <tech id="5040" lab_type="1" cost="75">
+      <name>Integrated Circuit Radiation Hardening</name>
+      <requires>5030</requires>
+    </tech>
+    <tech id="5050" lab_type="0" cost="50">
+      <name>Basic Robotics</name>
+      <description>Pass-through study that allows for the development of new robots.</description>
+      <requires>5020</requires>
+    </tech>
+    <tech id="5060" lab_type="1" cost="75">
+      <name>Advanced Robotics</name>
+      <description>Allows for the development of advanced robotics.</description>
+      <requires>5050,5030</requires>
+    </tech>
+    <tech id="5070" lab_type="1" cost="100">
+      <name>Humanoid Workers</name>
+      <description>Advanced robots that can perform the functions of humans.</description>
+      <requires>5060,5080</requires>
+      <effects>
+        <unlock type="robot">humanoid_worker</unlock>
+      </effects>
+    </tech>
+    <tech id="5080" lab_type="0" cost="75">
+      <name>Artificial Intelligence</name>
+    </tech>
+  </category>
+  <category name="Astronomy">
+    <tech id="6000" lab_type="0" cost="50">
+      <name>Astrophysics</name>
+    </tech>
+    <tech id="6010" lab_type="0" cost="50">
+      <name>Solar Physics</name>
+      <requires>6000</requires>
+      <effects>
+        <unlock type="disaster_prediction">flare</unlock>
+      </effects>
+    </tech>
+  </category>
+</technology>
