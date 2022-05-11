@@ -33,6 +33,14 @@
       <name>Plasma Containment</name>
       <requires>1110,3000</requires>
     </tech>
+    <tech id="1130" lab_type="1" cost="100" icon_index="222">
+      <name>Fusion Reactor</name>
+      <description>Our breakthrough in Plasma Containment has laid the groundwork out for a new power source.</description>
+      <requires>1120</requires>
+      <effects>
+        <unlock type="structure">SID_FUSION_REACTOR</unlock>
+      </effects>
+    </tech>
   </category>
   <category name="Material Science" icon_index="5">
     <tech id="3000" lab_type="1" cost="50" icon_index="973">
