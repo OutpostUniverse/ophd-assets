@@ -132,8 +132,11 @@
   </category>
   <category name="Computer Science &amp; Engineering" icon_index="3">
     <tech id="5000" lab_type="0" cost="50" icon_index="197">
-      <name>Electronics</name>
-      <description>It won't be long before our computer and electronics equipment starts to fail. We need to investigate methods of build new electronic components and circuits with the local materials of our new planet.</description>
+      <name>Xeno Electronics</name>
+      <description>Our electronic equipment must be hardened to withstand the harsh conditions of this world. To maximize our colony's chance of survival, engineers on Earth built our electronics to the highest standards of radiation hardening, however this will be unsustainable as our colony develops. Further research into the planet's radiation environment will allow us to develop more cost-efficient electronics.</description>
+      <effects>
+        <modifier type="structure_cost">0.01</modifier>
+      </effects>
     </tech>
     <tech id="5010" lab_type="0" cost="75" icon_index="269">
       <name>Semiconductors</name>
@@ -176,15 +179,16 @@
   <category name="Astronomy" icon_index="0">
     <tech id="6000" lab_type="0" cost="50" icon_index="472">
       <name>Astrophysics</name>
+      <description>Astrophysics is the study of the physical properties of celestial bodies. Before departing Earth, this kind of research typically sought to gain a greater understanding of the fundamental particles that make up our universe. For now, we'll be content to figure out what kind of rocks the other planets are made up of.</description>
     </tech>
     <tech id="6010" lab_type="0" cost="50" icon_index="869">
       <name>Solar Physics</name>
-      <description>The study of our new host star and its behavior. Required to predict solar storm activity.</description>
+      <description>All of the data acquired on Earth about the local star is woefully insufficient, and also several million years out of date. This project seeks to gather detailed information about the properties, composition, and recent history of our new host.</description>
       <requires>6000</requires>
     </tech>
     <tech id="6020" lab_type="0" cost="50" icon_index="667">
       <name>Solar Storm Prediction</name>
-      <description>Allows for prediction of solar storm events such as Solar Flares and Coronal Mass Ejections that could cause damage to surface electronics and/or bath our new home's surface in ionizing radiation.</description>
+      <description>Solar Flares and Coronal Mass Ejections are relatively common, yet extremely dangerous, stellar phenomena. On Earth, the ionizing radiation released by these events frequently played havoc with orbital systems, but the planet's ionosphere protected human civilization on the surface. Since this planet lacks any appreciable ionosphere, developing systems to monitor and predict Solar Storms is vital to our colony's continued survival as it will give our colonists time to evacuate the surface and avoid the worst effects.</description>
       <requires>6010</requires>
       <effects>
         <unlock type="disaster_prediction">solar_storm</unlock>
@@ -192,17 +196,76 @@
     </tech>
     <tech id="6100" lab_type="0" cost="25" icon_index="311">
       <name>Basic Astronomy</name>
-      <description>Sets up the basis for our understanding of our new celestial neighborhood.</description>
+      <description>Astronomy is, colloquially, the study of everything not on Earth. Since we no longer live on Earth, our astronomers insist they be installed as the benevolent overlords of a new stellar technocracy, or at the very least, that they be given the opporunity to study the local solar system.</description>
     </tech>
     <tech id="6110" lab_type="0" cost="50" icon_index="263">
       <name>Celestial Mechanics</name>
-      <description>The studia of the motion of the celestial bodies in our new solar neighborhood.</description>
+      <description>Our next step in improving our understanding of the local solar system is studying the orbits and movements of the celestial objects we've observed and developing sophisticated models so we can make accurate predictions about events in space that may impact our colony.</description>
       <requires>6100</requires>
+      <effects>
+        <unlock type="disaster_prediction">meteors</unlock>
+      </effects>
     </tech>
     <tech id="6120" lab_type="0" cost="50" icon_index="468">
       <name>Oribtal Mechanics</name>
-      <description>Orbital mechanics is the application of ballistics and Celestial Mechanics to the practical problems concerning the motion of rockets and other spacecraft. Orbital mechanics provides a foundation for us to design and deploy new spacecraft and space technologies.</description>
+      <description>Orbital Mechanics is the study of spacecraft trajectory and how to alleviate the effects of gravity as it tries to stop you from getting to where you want to go. Developing robust simulations of objects in orbit will be necessary if we want to deploy spacecraft and satellites.</description>
       <requires>6110</requires>
+    </tech>
+  </category>
+  <category name="Health and Wellness" icon_index="8">
+    <tech id="7010" lab_type="0" cost="12" icon_index="134">
+      <name>Epidemiology</name>
+      <description>Our medical experts are concerned that our colony's cramped living conditions and self-contained environment leave us at great risk of an epidemic devastating our population. By studying past outbreaks and simulating new ones, we can develop methods to detect the early stages of an epidemic, allowing us to enact a quarantine and limit the impact of any such outbreak.</description>
+      <effects>
+        <unlock type="disaster_prediction">plague</unlock>
+      </effects>
+    </tech>
+    <tech id="7020" lab_type="0" cost="80" icon_index="58">
+      <name>Immunology</name>
+      <description>Due to our recent advances in microbiology and nanotechnology, we are now theoretically able to eliminate all disease, assuming our colonists are comfortable with injecting themselves with swarms of tiny robotic warriors. This would not only boost colony morale, but permanently eliminate the threat of plagues.</description>
+      <requires>7010</requires>
+      <effects>
+        <unlock type="disaster_prediction">no_more_plagues_placeholder</unlock>
+        <modifier type="pop_morale">0.10</modifier>
+      </effects>
+    </tech>
+    <tech id="7030" lab_type="0" cost="20" icon_index="508">
+      <name>Environmental Psychology</name>
+      <description>Life on this world takes a toll, both physically and mentally. Increasing rations and mandating extra naps can help with the former, but addressing the latter will require understanding the effects of this new environment on our colonists' psyches and developing new coping techniques so that we can all get through these trying times together.</description>
+      <effects>
+        <modifier type="pop_morale">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="7040" lab_type="0" cost="20" icon_index="87">
+      <name>Pediatrics</name>
+      <description>Our colony's future survival depends upon our children. Unfortunately, its present survival depends upon every able-bodied adult working full-time and not taking parental leave. We need to research ways to offset the demands of childcare without undermining the family unit.</description>
+      <effects>
+        <unlock type="structure">nursery</unlock>
+      </effects>
+    </tech>
+    <tech id="7050" lab_type="0" cost="22" icon_index="28">
+      <name>Embryology</name>
+      <description>Some of our health experts have raised concerns that conditions in our colony are adversely effecting the reproductive health of our colonists, citing lower than expected birth rates. While it's possible this is just due to the stress of establishing a new colony on a hostile planet, or the recent destruction of our homeworld not putting our colonists "in the mood", our doctors have proposed a study to ensure there's nothing inherent to our new home impacting our fertility.</description>
+      <effects>
+        <modifier type="pop_fertility">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="7060" lab_type="0" cost="40" icon_index="22">
+      <name>Offspring Enhancement</name>
+      <description>A broad term encompassing everything from improved fertility treatments to eliminating congential disorders through embryonic gene editing, an Offpsring Enhancement program will provide our colony with a greater number of superior, longer-lived children and slightly boost colony morale.</description>
+      <requires>7050</requires>
+      <effects>
+        <modifier type="pop_fertility">0.10</modifier>
+        <modifier type="pop_morale">0.02</modifier>
+        <modifier type="pop_mortality">0.02</modifier>
+      </effects>
+    </tech>
+    <tech id="7070" lab_type="0" cost="12" icon_index="1009">
+      <name>Pharmacology</name>
+      <description>Pharmacology is the study of chemicals interactions with biological systems - in short, how drugs effect people. If we are to maintain a healthy population on this new world, we will need the knowledge base and infrastructure to develop new medications to combat everything from disease to depression to headaches.</description>
+      <effects>
+        <modifier type="pop_mortality">0.05</modifier>
+      </effects>
     </tech>
   </category>
 </technology>
