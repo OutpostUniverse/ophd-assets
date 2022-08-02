@@ -126,7 +126,7 @@
   <category name="Planetary Science" icon_index="4">
     <tech id="4000" lab_type="0" cost="50" icon_index="1020">
       <name>Geology</name>
-      <description>Study of our new planet</description>
+      <description>Our current understanding of this planet's physical properties is ruidmentary, at best. A preliminary investigation into the geological properties and history of this world will give us a better understanding of how to adapt our colony to our environment and increase the efficiency of our mining operations.</description>
     </tech>
     <tech id="4010" lab_type="0" cost="75" icon_index="614">
       <name>Mineralogy</name>
@@ -143,15 +143,19 @@
       </effects>
     </tech>
     <tech id="5010" lab_type="0" cost="75" icon_index="269">
-      <name>Semiconductors</name>
+      <name>3D Printed Circuits</name>
+      <description>Additive manufacturing, more commonly known as 3D printing, has existed as a concept since the mid 20th century, but did not become a viable large-scale manufacturing technique until nearly a century afterwards. Promising research applying these techniques to traditional printed circuits was unfortunately cut short by the sudden destruction of Earth, but our engineers are eager to pick up the torch.</description>
       <requires>5000</requires>
+      <effects>
+        <modifier type="maintenance_cost">0.03</modifier>
+      </effects>
     </tech>
     <tech id="5020" lab_type="0" cost="75" icon_index="235">
-      <name>Integrated Circuits</name>
+      <name>Advanced Integrated Circuits</name>
       <requires>5010</requires>
     </tech>
     <tech id="5030" lab_type="1" cost="100" icon_index="332">
-      <name>Advanced Integrated Circuits</name>
+      <name>Nano Electronics</name>
       <requires>5020,3030</requires>
     </tech>
     <tech id="5040" lab_type="1" cost="75" icon_index="14">
@@ -177,7 +181,29 @@
       </effects>
     </tech>
     <tech id="5080" lab_type="0" cost="75" icon_index="518">
-      <name>Artificial Intelligence</name>
+      <name>Virtual Assistants</name>
+      <description>The 21st century saw the proliferation of Virtual Assistants, rudimentary software "intelligences" capable of assisting users in day-to-day tasks and responding to simple voice or text queries. Although the principles behind Virtual Assistants are well understood, as they were largely proprietary software products no practical implementations survived the destruction of Earth. Some of our researchers have proposed the development of a new Virtual Assistant to serve as a springboard for future Aritficial Intelligence research.</description>
+    </tech>
+    <tech id="5081" lab_type="0" cost="35" icon_index="11">
+      <name>Autonomous Expert Systems</name>
+      <description>Expert Systems are programs designed to emulate human decision-making abilities, typically by being fed data and then calculating extensive chains of "if-then" rules to arrive at a result. Traditionally, human operators have needed to write the rules, limiting the effectiveness of these systems based on the level of expertise of whoever was stuck writing the rules and how much time they were willing to spend on that task. Our researchers wish to investigate the feasibility of an Autonomous Expert System capable of expanding its own knowledge base.</description>
+      <requires>5080</requires>
+    </tech>
+    <tech id="5082" lab_type="0" cost="55" icon_index="153">
+      <name>Cybernetic Teleoperation</name>
+      <description>One of the greatest challenges of adapting to our new home has been finding ways to do more with fewer people. Currently, the various rovers employed by our colony require remote supervision and control by human technicians while they aren't performing other duties. Our AI researchers believe much of this burden could be offloaded onto a specialized vehicle control system, simultaneously allowing us to deploy more rovers and giving our technicians their lunch breaks back.</description>
+      <requires>5080</requires>
+      <effects>
+        <unlock type="structure">robot_command</unlock>
+      </effects>
+    </tech>
+    <tech id="5055" lab_type="0" cost="70" icon_index="727">
+      <name>Advanced Computer Guidance</name>
+      <description>Giving control of our rovers over to AI systems has been a resounding success, in that none of them have yet gone on a colony-destroying rampage. Some of our engineers have submitted a proposal for a redesigned Robot Command Center capable of supporting a greater number of active vehicles.</description>
+      <requires>5081,5082</requires>
+      <effects>
+        <unlock type="structure">robot_command2</unlock>
+      </effects>
     </tech>
   </category>
   <category name="Astronomy" icon_index="0">
@@ -218,14 +244,14 @@
   </category>
   <category name="Health and Wellness" icon_index="8">
     <tech id="7010" lab_type="0" cost="12" icon_index="134">
-      <name>Epidemiology</name>
+      <name>Colonial Epidemiology</name>
       <description>Our medical experts are concerned that our colony's cramped living conditions and self-contained environment leave us at great risk of an epidemic devastating our population. By studying past outbreaks and simulating new ones, we can develop methods to detect the early stages of an epidemic, allowing us to enact a quarantine and limit the impact of any such outbreak.</description>
       <effects>
         <unlock type="disaster_prediction">plague</unlock>
       </effects>
     </tech>
     <tech id="7020" lab_type="0" cost="80" icon_index="58">
-      <name>Immunology</name>
+      <name>Nano-Immunology</name>
       <description>Due to our recent advances in microbiology and nanotechnology, we are now theoretically able to eliminate all disease, assuming our colonists are comfortable with injecting themselves with swarms of tiny robotic warriors. This would not only boost colony morale, but permanently eliminate the threat of plagues.</description>
       <requires>7010</requires>
       <effects>
@@ -241,14 +267,14 @@
       </effects>
     </tech>
     <tech id="7040" lab_type="0" cost="20" icon_index="87">
-      <name>Pediatrics</name>
+      <name>Centralized Pediatrics</name>
       <description>Our colony's future survival depends upon our children. Unfortunately, its present survival depends upon every able-bodied adult working full-time and not taking parental leave. We need to research ways to offset the demands of childcare without undermining the family unit.</description>
       <effects>
         <unlock type="structure">nursery</unlock>
       </effects>
     </tech>
     <tech id="7050" lab_type="0" cost="22" icon_index="28">
-      <name>Embryology</name>
+      <name>Nonterrestrial Embryology</name>
       <description>Some of our health experts have raised concerns that conditions in our colony are adversely effecting the reproductive health of our colonists, citing lower-than-expected birth rates. While it's possible this is just due to the stress of establishing a new colony on a hostile planet or the recent destruction of our homeworld not putting our colonists "in the mood", our doctors have proposed a study to ensure there's nothing inherent to our new home impacting our fertility.</description>
       <effects>
         <modifier type="pop_fertility">0.05</modifier>
@@ -269,6 +295,14 @@
       <description>Pharmacology is the study of chemicals interactions with biological systems - in short, how drugs effect people. If we are to maintain a healthy population on this new world, we will need the knowledge base and infrastructure to develop new medications to combat everything from disease to depression to headaches.</description>
       <effects>
         <modifier type="pop_mortality">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="8011" lab_type="0" cost="25" icon_index="128">
+      <name>Automated Diagnostic Examinations</name>
+      <description>Our health experts, AI researchers, and engineers have proposed a robotic medical assistant capable of performing routine tasks, which they believe will increase the capacity of our colony's healthcare force.</description>
+      <requires>5081,5050</requires>
+      <effects>
+        <modifier type="pop_mortality">0.10</modifier>
       </effects>
     </tech>
   </category>
