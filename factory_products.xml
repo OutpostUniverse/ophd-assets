@@ -1,0 +1,44 @@
+<products>
+	<product>
+		<id>0</id>
+		<name>RoboDigger</name>
+		<description>The RoboDigger allows your colony to expand underground, either by drilling a shaft into the planet's crust or by further excavating an existing area. The RoboDigger's drilling equipment is not far removed from the large borers used on Earth since the 19th century; however the tunneling shield was over-engineered by necessity prior to departure to withstand the hostile environment of our new home.</description>
+	</product>
+
+	<product>
+		<id>1</id>
+		<name>RoboDozer</name>
+		<description>"Lorem ipsum dolor sit amet -- Dozer</description>
+	</product>
+
+	<product>
+		<id>2</id>
+		<name>RoboMiner</name>
+		<description>"Lorem ipsum dolor sit amet -- Miner</description>
+	</product>
+
+	<product>
+		<id>3</id>
+		<name>RoboExplorer</name>
+		<description>"Lorem ipsum dolor sit amet -- Explorer</description>
+	</product>
+
+	<product>
+		<id>4</id>
+		<name>Truck</name>
+		<description>"Lorem ipsum dolor sit amet -- Truck</description>
+	</product>
+
+	<product>
+		<id>32</id>
+		<name>Clothing</name>
+		<description>"Lorem ipsum dolor sit amet -- Clothing - Underground Factories</description>
+	</product>
+
+	<product>
+		<id>33</id>
+		<name>Medicine</name>
+		<description>"Lorem ipsum dolor sit amet -- Medicine - Underground Factories</description>
+	</product>
+
+</products>
