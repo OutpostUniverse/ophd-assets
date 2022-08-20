@@ -201,7 +201,7 @@
       <description>One of the greatest challenges of adapting to our new home has been finding ways to do more with fewer people. Currently, the various rovers employed by our colony require remote supervision and control by human technicians while they aren't performing other duties. Our AI researchers believe much of this burden could be offloaded onto a specialized vehicle control system, simultaneously allowing us to deploy more rovers and giving our technicians their lunch breaks back.</description>
       <requires>5080</requires>
       <effects>
-        <unlock type="structure">robot_command</unlock>
+        <unlock type="structure">SID_ROBOT_COMMAND</unlock>
       </effects>
     </tech>
     <tech id="5055" lab_type="0" cost="70" icon_index="727">
@@ -209,7 +209,7 @@
       <description>Giving control of our rovers over to AI systems has been a resounding success, in that none of them have yet gone on a colony-destroying rampage. Some of our engineers have submitted a proposal for a redesigned Robot Command Center capable of supporting a greater number of active vehicles.</description>
       <requires>5081,5082</requires>
       <effects>
-        <unlock type="structure">robot_command2</unlock>
+        <unlock type="structure">SID_ROBOT_COMMAND2</unlock>
       </effects>
     </tech>
     <tech id="5083" lab_type="0" cost="1" icon_index="168">
@@ -297,7 +297,7 @@
       <name>Centralized Pediatrics</name>
       <description>Our colony's future survival depends upon our children. Unfortunately, its present survival depends upon every able-bodied adult working full-time and not taking parental leave. We need to research ways to offset the demands of childcare without undermining the family unit.</description>
       <effects>
-        <unlock type="structure">nursery</unlock>
+        <unlock type="structure">SID_NURSERY</unlock>
       </effects>
     </tech>
     <tech id="7050" lab_type="0" cost="22" icon_index="28">
