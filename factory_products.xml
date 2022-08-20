@@ -8,7 +8,7 @@
 	<product>
 		<id>1</id>
 		<name>RoboDozer</name>
-		<description>"The RoboDozer can grade, level, and reshape the rough terrain of this world, making it suitable for construction and road building. The RoboDozer's low-mass, high-strength blade, capable of moving hundreds of thousands of pounds of rock and soil, was originally designed to build the landing pad for a planned lunar outpost that never came to fruition.</description>
+		<description>"The RoboDozer can grade, level, and reshape the rough terrain of this world, making it suitable for construction and road building. Capable of moving hundreds of thousands of pounds of rock and soil, the RoboDozer's low-mass, high-strength blade was originally designed to build the landing pad for a planned lunar outpost that never came to fruition.</description>
 	</product>
 
 	<product>
@@ -20,7 +20,7 @@
 	<product>
 		<id>3</id>
 		<name>RoboExplorer</name>
-		<description>"The RoboExplorer can identify additional mining locations that our initial orbital inspection missed. Equipped with an electromagnetic propsecting kit, x-ray spectrometer and mineralogy suite, and sample analysis package, this evolution of Mars rover technology is a self-sufficient geology lab on wheels.</description>
+		<description>"The RoboExplorer can identify additional mining locations that our initial orbital inspection missed. Equipped with an electromagnetic prospecting kit, x-ray spectrometer and mineralogy suite, and sample analysis package, this evolution of Mars rover technology is a self-sufficient geology lab on wheels.</description>
 	</product>
 
 	<product>
