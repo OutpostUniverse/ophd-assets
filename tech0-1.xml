@@ -150,12 +150,13 @@
         <modifier type="maintenance_cost">0.03</modifier>
       </effects>
     </tech>
-    <tech id="5020" lab_type="0" cost="75" icon_index="235">
-      <name>Advanced Integrated Circuits</name>
+    <tech id="5020" lab_type="0" cost="75" icon_index="332">
+      <name>Nanocircuitry</name>
+      <description>Nanotechnology typically conjures up images of a multitude of microscopic machines manipulating matter on the atomic level. Before we can build really tiny robots, we first need to be able to build really tiny electronics. This project seeks to explore new nanolithography techniques and ways to overcome some of the challenges involved in manufacturing precision circuitry on such a small scale.</description>
       <requires>5010</requires>
     </tech>
     <tech id="5030" lab_type="1" cost="100" icon_index="332">
-      <name>Nano Electronics</name>
+      <name>Advanced ICs (Rename me)</name>
       <requires>5020,3030</requires>
     </tech>
     <tech id="5040" lab_type="1" cost="75" icon_index="14">
@@ -163,9 +164,12 @@
       <requires>5030</requires>
     </tech>
     <tech id="5050" lab_type="0" cost="50" icon_index="136">
-      <name>Basic Robotics</name>
-      <description>Pass-through study that allows for the development of new robots.</description>
+      <name>Robot Power System Refit</name>
+      <description>Our colony relies on a multitude of robots, from rovers to industrial robots to automated maintenance drones, to assist with day-to-day tasks, though high power demands and limited battery life mean these robots spend most of their time recharging. Our recent breakthroughs in the design and manufacture of electronics has led to the development of smaller, more energy-efficient components. Redesigning our robots to use these components could decrease their average power consumption, increasing operational time and overall productivity.</description>
       <requires>5020</requires>
+      <effects>
+        <unlock type="robot">placeholder_faster_robots</unlock>
+      </effects>
     </tech>
     <tech id="5060" lab_type="1" cost="75" icon_index="186">
       <name>Advanced Robotics</name>
@@ -174,8 +178,8 @@
     </tech>
     <tech id="5070" lab_type="1" cost="100" icon_index="1014">
       <name>Humanoid Workers</name>
-      <description>Advanced robots that can perform the functions of humans.</description>
-      <requires>5060,5080</requires>
+      <description>Following the success of our Artificial General Intelligence project, our robotics engineers recently demonstrated a prototype robotic worker hosting an independent AI agent capable of task-level autonomy. Although initial tests were promising, when it came time for a demonstration, several major issues quickly became obvious. Our surviving engineers are confident in their ability to design a model fit for large-scale production, allowing us to supplement our colony's workforce with robotic workers, as soon as they repair the prototype unit and the lab used for the demo.</description>
+      <requires>5069</requires>
       <effects>
         <unlock type="robot">humanoid_worker</unlock>
       </effects>
@@ -183,6 +187,9 @@
     <tech id="5080" lab_type="0" cost="75" icon_index="518">
       <name>Virtual Assistants</name>
       <description>The 21st century saw the proliferation of Virtual Assistants, rudimentary software "intelligences" capable of assisting users in day-to-day tasks and responding to simple voice or text queries. Although the principles behind Virtual Assistants are well understood, as they were largely proprietary software products no practical implementations survived the destruction of Earth. Some of our researchers have proposed the development of a new Virtual Assistant to serve as a springboard for future Aritficial Intelligence research.</description>
+      <effects>
+        <modifier type="pop_morale">0.01</modifier>
+      </effects>
     </tech>
     <tech id="5081" lab_type="0" cost="35" icon_index="11">
       <name>Autonomous Expert Systems</name>
@@ -194,7 +201,7 @@
       <description>One of the greatest challenges of adapting to our new home has been finding ways to do more with fewer people. Currently, the various rovers employed by our colony require remote supervision and control by human technicians while they aren't performing other duties. Our AI researchers believe much of this burden could be offloaded onto a specialized vehicle control system, simultaneously allowing us to deploy more rovers and giving our technicians their lunch breaks back.</description>
       <requires>5080</requires>
       <effects>
-        <unlock type="structure">SID_ROBOT_COMMAND</unlock>
+        <unlock type="structure">robot_command</unlock>
       </effects>
     </tech>
     <tech id="5055" lab_type="0" cost="70" icon_index="727">
@@ -202,7 +209,27 @@
       <description>Giving control of our rovers over to AI systems has been a resounding success, in that none of them have yet gone on a colony-destroying rampage. Some of our engineers have submitted a proposal for a redesigned Robot Command Center capable of supporting a greater number of active vehicles.</description>
       <requires>5081,5082</requires>
       <effects>
-        <unlock type="structure">SID_ROBOT_COMMAND2</unlock>
+        <unlock type="structure">robot_command2</unlock>
+      </effects>
+    </tech>
+    <tech id="5083" lab_type="0" cost="1" icon_index="168">
+      <name>Robotic Image Processing</name>
+      <description>Our robots are equipped with only a rudimentary vision package: low-resolution cameras, software that can barely detect and avoid obstacles, and limited ability to model the surrounding environment. While these limitations have not inhibited our colony's survival, for us to truly thrive, we will need faster, more efficient robots capable of a greater level of autonomy. To this end, our engineers and AI researchers have submitted several proposals to improve the vision systems of our robots.</description>
+      <requires>5081,5050</requires>
+      <effects>
+        <unlock type="robot">placeholder_robots_work_faster</unlock>
+      </effects>
+    </tech>
+    <tech id="5069" lab_type="1" cost="100" icon_index="990">
+      <name>Artificial General Intelligence</name>
+      <description>Our AI research so far has produced several specialized programs that can simulate intelligence in very specific circumstances - our Virtual Assistants can "talk" to people, our rovers can "see" rocks. A few minutes of experimentation, however, reveals how sharply limited these "intelligences" really are. While creating an artificial consciousness on par with that of a human is still well beyond the realms of the possible, our researchers believe, while still a daunting task, they can unify our existing systems into a single, general-purpose intelligence capable of rudimentary reasoning, planning, and human interaction capabilities.</description>
+      <requires>5060,5083</requires>
+    </tech>
+    <tech id="5001" lab_type="0" cost="1" icon_index="98">
+      <name>Systems Analysis</name>
+      <description>Since our colony represents humanity's first attempt at establishing a permanent offworld settlement, we have no idea how the technology and infrastructure we rely on for survival functions under real-world conditions. In order to better maintain these systems, and to reduce their general level of anxiety, our maintenance technicians have proposed a thorough analysis of the operating conditions and breakdown patterns of our colony's infrastructure technology.</description>
+      <effects>
+        <modifier type="maintenance_cost">0.02</modifier>
       </effects>
     </tech>
   </category>
@@ -270,7 +297,7 @@
       <name>Centralized Pediatrics</name>
       <description>Our colony's future survival depends upon our children. Unfortunately, its present survival depends upon every able-bodied adult working full-time and not taking parental leave. We need to research ways to offset the demands of childcare without undermining the family unit.</description>
       <effects>
-        <unlock type="structure">SID_NURSERY</unlock>
+        <unlock type="structure">nursery</unlock>
       </effects>
     </tech>
     <tech id="7050" lab_type="0" cost="22" icon_index="28">
@@ -302,7 +329,7 @@
       <description>Our health experts, AI researchers, and engineers have proposed a robotic medical assistant capable of performing routine tasks, which they believe will increase the capacity of our colony's healthcare force.</description>
       <requires>5081,5050</requires>
       <effects>
-        <modifier type="pop_mortality">0.10</modifier>
+        <modifier type="pop_mortality">0.1</modifier>
       </effects>
     </tech>
   </category>
