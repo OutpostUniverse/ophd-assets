@@ -232,6 +232,43 @@
         <modifier type="maintenance_cost">0.02</modifier>
       </effects>
     </tech>
+    <tech id="5084" lab_type="0" cost="100" icon_index="524">
+      <name>Autonomous Surveyor Platform</name>
+      <description>During a recent excavation project, one of our RoboDiggers uncovered a vein of ore that our initial orbital scan of the planet failed to locate. Our geologists believe there to be several such potential mining sites and have proposed a fully autonomous robotic surveyor to help locate them.</description>
+      <requires>5083</requires>
+      <effects>
+        <unlock type="robot">RID_EXPLORER_BOT</unlock>
+      </effects>
+    </tech>
+    <tech id="5002" lab_type="0" cost="50" icon_index="581">
+      <name>Predictive Maintenance</name>
+      <description>One of our maintenance technicians has proposed outfitting key systems with various sensors which would feed into a centralized database, allowing repair crews to monitor equipment performance trends and make minor corrective repairs as needed, preventing major breakdowns.</description>
+      <requires>5001</requires>
+      <effects>
+        <modifier type="breakdown">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="5003" lab_type="0" cost="50" icon_index="118">
+      <name>Efficiency Engineering</name>
+      <description>Our factory workers, in collaboration with some of our researchers, have identified several common points on our factory assembly lines where slowdown occurs. This project will try to eliminate these issues and find other ways to increase our manufacturing efficiency.</description>
+      <requires>5001</requires>
+      <effects>
+        <unlock type="structure">placeholder_factory_production_upgrade</unlock>
+      </effects>
+    </tech>
+    <tech id="5004" lab_type="0" cost="50" icon_index="104">
+      <name>Researcher Optimization</name>
+      <description>A middle manager recent proposed establishing arbitrary productivity metrics for our scientists, punishing those that fail to meet their quotas and offering no rewards for those that do. We were going to fire him, but computer projections show it would actually make research go faster.</description>
+      <requires>5001</requires>
+      <effects>
+        <unlock type="structure">placeholder_research_speed_upgrade</unlock>
+      </effects>
+    </tech>
+    <tech id="5005" lab_type="0" cost="120" icon_index="45">
+      <name>Administration Facility</name>
+      <description>Our efficiency studies have lead to several colonists declaring themselves Efficiency Experts, making it their job to optimize and eliminate waste as much as possible. They would like to design and build an Administration Facility where they may monitor our colony's overall efficiency.</description>
+      <requires>5003,5004,5002</requires>
+    </tech>
   </category>
   <category name="Astronomy" icon_index="0">
     <tech id="6000" lab_type="0" cost="50" icon_index="472">
