@@ -8,37 +8,37 @@
 	<product>
 		<id>1</id>
 		<name>RoboDozer</name>
-		<description>"Lorem ipsum dolor sit amet -- Dozer</description>
+		<description>"The RoboDozer can grade, level, and reshape the rough terrain of this world, making it suitable for construction and road building. Capable of moving hundreds of thousands of pounds of rock and soil, the RoboDozer's low-mass, high-strength blade was originally designed to build the landing pad for a planned lunar outpost that never came to fruition.</description>
 	</product>
 
 	<product>
 		<id>2</id>
 		<name>RoboMiner</name>
-		<description>"Lorem ipsum dolor sit amet -- Miner</description>
+		<description>"The RoboMiner builds mines at designated mining beacons. This action consumes the vehicle. Arguably the most advanced piece of technology brought with us from Earth, the RoboMiner deploys into a fully automated, self-sustaining mining operation, robot factory, and maintenance facility, capable of digging and drilling tunnels, extracting and retrieving ores, and repairing and replacing the hundreds of specialized robots it employs.</description>
 	</product>
 
 	<product>
 		<id>3</id>
 		<name>RoboExplorer</name>
-		<description>"Lorem ipsum dolor sit amet -- Explorer</description>
+		<description>"The RoboExplorer can identify additional mining locations that our initial orbital inspection missed. Equipped with an electromagnetic prospecting kit, x-ray spectrometer and mineralogy suite, and sample analysis package, this evolution of Mars rover technology is a self-sufficient geology lab on wheels.</description>
 	</product>
 
 	<product>
 		<id>4</id>
 		<name>Truck</name>
-		<description>"Lorem ipsum dolor sit amet -- Truck</description>
+		<description>"Trucks are needed to carry ore from a mine to a smelter for refinement. Once assigned to a mine and smelter, trucks will automatically travel along the fastest route between these structures. Trucks travel faster over bulldozed terrain, and fastest over paved roads.</description>
 	</product>
 
 	<product>
 		<id>32</id>
 		<name>Clothing</name>
-		<description>"Lorem ipsum dolor sit amet -- Clothing - Underground Factories</description>
+		<description>"Standard-issue jumpsuits are available for all colonists, but these were designed for functionality, not fashion. Offering regular clothing will allow people to demonstrate their style and individuality, improving colony morale.</description>
 	</product>
 
 	<product>
 		<id>33</id>
 		<name>Medicine</name>
-		<description>"Lorem ipsum dolor sit amet -- Medicine - Underground Factories</description>
+		<description>"Medicine is a catch-all term for first-aid supplies, antibiotics, vaccines, dietary supplements, and anything else a colonist might need to stay happy and healthy. Keeping a supply of medicine will reduce our colony's mortality rate and help stop the spread of a plague in the event of an outbreak.</description>
 	</product>
 
 </products>

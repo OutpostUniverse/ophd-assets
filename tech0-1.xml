@@ -2,13 +2,14 @@
   <category name="Physics" icon_index="7">
     <tech id="1000" lab_type="0" cost="50" icon_index="509">
       <name>Communications</name>
-      <description>Description Here</description>
+      <description>The rovers employed by our colony have limited onboard decision making capabilities, depending on constant communication with remote human or AI teleoperators for complex route planning and instructions beyond simple hard-coded directives. The existing Communications Towers in use by our colony are rough-and-ready designs adapted from systems used on Earth and ill-suited to the conditions on this planet.  By designing and deploying more specialized Communications Towers, we can expand the operational range of our rovers, opening up more of this planet and its resources to us.</description>
       <effects>
         <unlock type="structure">SID_COMM_TOWER_2</unlock>
       </effects>
     </tech>
     <tech id="1010" lab_type="1" cost="100" icon_index="62">
       <name>Harsh Environment Signal Processing</name>
+      <description>Performance tests of our Communications Towers have discovered a 20% greater rate of signal degradation than expected, the result of a higher amount of noise caused by stellar radiation than expected. Our engineers believe that another redesign of the Communications Tower with superior noise-reduction equipment should greatly increase the coverage they provide.</description>
       <requires>1000,5030</requires>
       <effects>
         <unlock type="structure">SID_COMM_TOWER_3</unlock>
@@ -16,17 +17,20 @@
     </tech>
     <tech id="1020" lab_type="0" cost="50" icon_index="81">
       <name>Radio Signal Amplification</name>
+      <description>A flaw in the RF amplifiers used by our communications equipment is inhibiting our colony's ability to contact orbital systems.  When asked why we continue to have issues with 20th century technology, our scientists responded with several minutes of uncomfortable silence.</description>
       <requires>1010</requires>
     </tech>
     <tech id="1030" lab_type="0" cost="75" icon_index="82">
       <name>Transponder Arrays</name>
+      <description>I have no clue, the only thing Google tells me about transponder arrays is something to do with seafloor mapping.  How is this supposed to help on a planet without any appreciable sources of water?</description>
       <requires>1020,5030</requires>
     </tech>
     <tech id="1100" lab_type="1" cost="75" icon_index="455">
       <name>Theoretical Physics</name>
     </tech>
     <tech id="1110" lab_type="1" cost="100" icon_index="53">
-      <name>Superconductivity</name>
+      <name>High-Temperature Superconductivity</name>
+      <description>High-temperature superconductors are materials with zero electrical resistance when temperatures are no warmer than a balmy -192 degrees Celsius, with our best superconductors requiring a temperature of -121 degrees Celsius. Maintaining such a low temperature requires a substantial amount of power, so if we could develop new superconductors capable of operating in higher temperatures, it could put us on the path to fusion reactors that produce more power than they consume.</description>
       <requires>1100</requires>
     </tech>
     <tech id="1120" lab_type="1" cost="100" icon_index="358">
@@ -122,7 +126,7 @@
   <category name="Planetary Science" icon_index="4">
     <tech id="4000" lab_type="0" cost="50" icon_index="1020">
       <name>Geology</name>
-      <description>Study of our new planet</description>
+      <description>Our current understanding of this planet's physical properties is ruidmentary, at best. A preliminary investigation into the geological properties and history of this world will give us a better understanding of how to adapt our colony to our environment and increase the efficiency of our mining operations.</description>
     </tech>
     <tech id="4010" lab_type="0" cost="75" icon_index="614">
       <name>Mineralogy</name>
@@ -132,19 +136,27 @@
   </category>
   <category name="Computer Science &amp; Engineering" icon_index="3">
     <tech id="5000" lab_type="0" cost="50" icon_index="197">
-      <name>Electronics</name>
-      <description>It won't be long before our computer and electronics equipment starts to fail. We need to investigate methods of build new electronic components and circuits with the local materials of our new planet.</description>
+      <name>Xeno Electronics</name>
+      <description>Our electronic equipment must be hardened to withstand the harsh conditions of this world. To maximize our colony's chance of survival, engineers on Earth built our electronics to the highest standards of radiation hardening. However, this will be unsustainable as our colony develops. Further research into the planet's radiation environment will allow us to develop more cost-efficient electronics.</description>
+      <effects>
+        <modifier type="structure_cost">0.01</modifier>
+      </effects>
     </tech>
     <tech id="5010" lab_type="0" cost="75" icon_index="269">
-      <name>Semiconductors</name>
+      <name>3D Printed Circuits</name>
+      <description>Additive manufacturing, more commonly known as 3D printing, has existed as a concept since the mid 20th century, but did not become a viable large-scale manufacturing technique until nearly a century afterwards. Promising research applying these techniques to traditional printed circuits was unfortunately cut short by the sudden destruction of Earth, but our engineers are eager to pick up the torch.</description>
       <requires>5000</requires>
+      <effects>
+        <modifier type="maintenance_cost">0.03</modifier>
+      </effects>
     </tech>
-    <tech id="5020" lab_type="0" cost="75" icon_index="235">
-      <name>Integrated Circuits</name>
+    <tech id="5020" lab_type="0" cost="75" icon_index="332">
+      <name>Nanocircuitry</name>
+      <description>Nanotechnology typically conjures up images of a multitude of microscopic machines manipulating matter on the atomic level. Before we can build really tiny robots, we first need to be able to build really tiny electronics. This project seeks to explore new nanolithography techniques and ways to overcome some of the challenges involved in manufacturing precision circuitry on such a small scale.</description>
       <requires>5010</requires>
     </tech>
     <tech id="5030" lab_type="1" cost="100" icon_index="332">
-      <name>Advanced Integrated Circuits</name>
+      <name>Advanced ICs (Rename me)</name>
       <requires>5020,3030</requires>
     </tech>
     <tech id="5040" lab_type="1" cost="75" icon_index="14">
@@ -152,9 +164,12 @@
       <requires>5030</requires>
     </tech>
     <tech id="5050" lab_type="0" cost="50" icon_index="136">
-      <name>Basic Robotics</name>
-      <description>Pass-through study that allows for the development of new robots.</description>
+      <name>Robot Power System Refit</name>
+      <description>Our colony relies on a multitude of robots, from rovers to industrial robots to automated maintenance drones, to assist with day-to-day tasks, though high power demands and limited battery life mean these robots spend most of their time recharging. Our recent breakthroughs in the design and manufacture of electronics has led to the development of smaller, more energy-efficient components. Redesigning our robots to use these components could decrease their average power consumption, increasing operational time and overall productivity.</description>
       <requires>5020</requires>
+      <effects>
+        <unlock type="robot">placeholder_faster_robots</unlock>
+      </effects>
     </tech>
     <tech id="5060" lab_type="1" cost="75" icon_index="186">
       <name>Advanced Robotics</name>
@@ -163,28 +178,111 @@
     </tech>
     <tech id="5070" lab_type="1" cost="100" icon_index="1014">
       <name>Humanoid Workers</name>
-      <description>Advanced robots that can perform the functions of humans.</description>
-      <requires>5060,5080</requires>
+      <description>Following the success of our Artificial General Intelligence project, our robotics engineers recently demonstrated a prototype robotic worker hosting an independent AI agent capable of task-level autonomy. Although initial tests were promising, when it came time for a demonstration, several major issues quickly became obvious. Our surviving engineers are confident in their ability to design a model fit for large-scale production, allowing us to supplement our colony's workforce with robotic workers, as soon as they repair the prototype unit and the lab used for the demo.</description>
+      <requires>5069</requires>
       <effects>
         <unlock type="robot">humanoid_worker</unlock>
       </effects>
     </tech>
     <tech id="5080" lab_type="0" cost="75" icon_index="518">
-      <name>Artificial Intelligence</name>
+      <name>Virtual Assistants</name>
+      <description>The 21st century saw the proliferation of Virtual Assistants, rudimentary software "intelligences" capable of assisting users in day-to-day tasks and responding to simple voice or text queries. Although the principles behind Virtual Assistants are well understood, as they were largely proprietary software products no practical implementations survived the destruction of Earth. Some of our researchers have proposed the development of a new Virtual Assistant to serve as a springboard for future Aritficial Intelligence research.</description>
+      <effects>
+        <modifier type="pop_morale">0.01</modifier>
+      </effects>
+    </tech>
+    <tech id="5081" lab_type="0" cost="35" icon_index="11">
+      <name>Autonomous Expert Systems</name>
+      <description>Expert Systems are programs designed to emulate human decision-making abilities, typically by being fed data and then calculating extensive chains of "if-then" rules to arrive at a result. Traditionally, human operators have needed to write the rules, limiting the effectiveness of these systems based on the level of expertise of whoever was stuck writing the rules and how much time they were willing to spend on that task. Our researchers wish to investigate the feasibility of an Autonomous Expert System capable of expanding its own knowledge base.</description>
+      <requires>5080</requires>
+    </tech>
+    <tech id="5082" lab_type="0" cost="55" icon_index="153">
+      <name>Cybernetic Teleoperation</name>
+      <description>One of the greatest challenges of adapting to our new home has been finding ways to do more with fewer people. Currently, the various rovers employed by our colony require remote supervision and control by human technicians while they aren't performing other duties. Our AI researchers believe much of this burden could be offloaded onto a specialized vehicle control system, simultaneously allowing us to deploy more rovers and giving our technicians their lunch breaks back.</description>
+      <requires>5080</requires>
+      <effects>
+        <unlock type="structure">SID_ROBOT_COMMAND</unlock>
+      </effects>
+    </tech>
+    <tech id="5055" lab_type="0" cost="70" icon_index="727">
+      <name>Advanced Computer Guidance</name>
+      <description>Giving control of our rovers over to AI systems has been a resounding success, in that none of them have yet gone on a colony-destroying rampage. Some of our engineers have submitted a proposal for a redesigned Robot Command Center capable of supporting a greater number of active vehicles.</description>
+      <requires>5081,5082</requires>
+      <effects>
+        <unlock type="structure">SID_ROBOT_COMMAND2</unlock>
+      </effects>
+    </tech>
+    <tech id="5083" lab_type="0" cost="1" icon_index="168">
+      <name>Robotic Image Processing</name>
+      <description>Our robots are equipped with only a rudimentary vision package: low-resolution cameras, software that can barely detect and avoid obstacles, and limited ability to model the surrounding environment. While these limitations have not inhibited our colony's survival, for us to truly thrive, we will need faster, more efficient robots capable of a greater level of autonomy. To this end, our engineers and AI researchers have submitted several proposals to improve the vision systems of our robots.</description>
+      <requires>5081,5050</requires>
+      <effects>
+        <unlock type="robot">placeholder_robots_work_faster</unlock>
+      </effects>
+    </tech>
+    <tech id="5069" lab_type="1" cost="100" icon_index="990">
+      <name>Artificial General Intelligence</name>
+      <description>Our AI research so far has produced several specialized programs that can simulate intelligence in very specific circumstances - our Virtual Assistants can "talk" to people, our rovers can "see" rocks. A few minutes of experimentation, however, reveals how sharply limited these "intelligences" really are. While creating an artificial consciousness on par with that of a human is still well beyond the realms of the possible, our researchers believe, while still a daunting task, they can unify our existing systems into a single, general-purpose intelligence capable of rudimentary reasoning, planning, and human interaction capabilities.</description>
+      <requires>5060,5083</requires>
+    </tech>
+    <tech id="5001" lab_type="0" cost="1" icon_index="98">
+      <name>Systems Analysis</name>
+      <description>Since our colony represents humanity's first attempt at establishing a permanent offworld settlement, we have no idea how the technology and infrastructure we rely on for survival functions under real-world conditions. In order to better maintain these systems, and to reduce their general level of anxiety, our maintenance technicians have proposed a thorough analysis of the operating conditions and breakdown patterns of our colony's infrastructure technology.</description>
+      <effects>
+        <modifier type="maintenance_cost">0.02</modifier>
+      </effects>
+    </tech>
+    <tech id="5084" lab_type="0" cost="100" icon_index="524">
+      <name>Autonomous Surveyor Platform</name>
+      <description>During a recent excavation project, one of our RoboDiggers uncovered a vein of ore that our initial orbital scan of the planet failed to locate. Our geologists believe there to be several such potential mining sites and have proposed a fully autonomous robotic surveyor to help locate them.</description>
+      <requires>5083</requires>
+      <effects>
+        <unlock type="robot">RID_EXPLORER_BOT</unlock>
+      </effects>
+    </tech>
+    <tech id="5002" lab_type="0" cost="50" icon_index="581">
+      <name>Predictive Maintenance</name>
+      <description>One of our maintenance technicians has proposed outfitting key systems with various sensors which would feed into a centralized database, allowing repair crews to monitor equipment performance trends and make minor corrective repairs as needed, preventing major breakdowns.</description>
+      <requires>5001</requires>
+      <effects>
+        <modifier type="breakdown">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="5003" lab_type="0" cost="50" icon_index="118">
+      <name>Efficiency Engineering</name>
+      <description>Our factory workers, in collaboration with some of our researchers, have identified several common points on our factory assembly lines where slowdown occurs. This project will try to eliminate these issues and find other ways to increase our manufacturing efficiency.</description>
+      <requires>5001</requires>
+      <effects>
+        <unlock type="structure">placeholder_factory_production_upgrade</unlock>
+      </effects>
+    </tech>
+    <tech id="5004" lab_type="0" cost="50" icon_index="104">
+      <name>Researcher Optimization</name>
+      <description>A middle manager recent proposed establishing arbitrary productivity metrics for our scientists, punishing those that fail to meet their quotas and offering no rewards for those that do. We were going to fire him, but computer projections show it would actually make research go faster.</description>
+      <requires>5001</requires>
+      <effects>
+        <unlock type="structure">placeholder_research_speed_upgrade</unlock>
+      </effects>
+    </tech>
+    <tech id="5005" lab_type="0" cost="120" icon_index="45">
+      <name>Administration Facility</name>
+      <description>Our efficiency studies have lead to several colonists declaring themselves Efficiency Experts, making it their job to optimize and eliminate waste as much as possible. They would like to design and build an Administration Facility where they may monitor our colony's overall efficiency.</description>
+      <requires>5003,5004,5002</requires>
     </tech>
   </category>
   <category name="Astronomy" icon_index="0">
     <tech id="6000" lab_type="0" cost="50" icon_index="472">
       <name>Astrophysics</name>
+      <description>Astrophysics is the study of the physical properties of celestial bodies. Before departing Earth, this kind of research typically sought to gain a greater understanding of the fundamental particles that make up our universe. For now, we'll be content to figure out what kind of rocks the other planets are made up of.</description>
     </tech>
     <tech id="6010" lab_type="0" cost="50" icon_index="869">
       <name>Solar Physics</name>
-      <description>The study of our new host star and its behavior. Required to predict solar storm activity.</description>
+      <description>All of the data acquired on Earth about the local star is woefully insufficient, and also several million years out of date. This project seeks to gather detailed information about the properties, composition, and recent history of our new host.</description>
       <requires>6000</requires>
     </tech>
     <tech id="6020" lab_type="0" cost="50" icon_index="667">
       <name>Solar Storm Prediction</name>
-      <description>Allows for prediction of solar storm events such as Solar Flares and Coronal Mass Ejections that could cause damage to surface electronics and/or bath our new home's surface in ionizing radiation.</description>
+      <description>Solar Flares and Coronal Mass Ejections are relatively common, yet extremely dangerous stellar phenomena. On Earth, the ionizing radiation released by these events frequently played havoc with orbital systems, but the planet's ionosphere protected human civilization on the surface. Since this planet lacks any appreciable ionosphere, developing systems to monitor and predict Solar Storms is vital to our colony's continued survival as it will give our colonists time to evacuate the surface and avoid the worst effects.</description>
       <requires>6010</requires>
       <effects>
         <unlock type="disaster_prediction">solar_storm</unlock>
@@ -192,17 +290,84 @@
     </tech>
     <tech id="6100" lab_type="0" cost="25" icon_index="311">
       <name>Basic Astronomy</name>
-      <description>Sets up the basis for our understanding of our new celestial neighborhood.</description>
+      <description>Astronomy is, colloquially, the study of everything not on Earth. Since we no longer live on Earth, our astronomers insist they be installed as the benevolent overlords of a new stellar technocracy, or at the very least, that they be given the opporunity to study the local solar system.</description>
     </tech>
     <tech id="6110" lab_type="0" cost="50" icon_index="263">
       <name>Celestial Mechanics</name>
-      <description>The studia of the motion of the celestial bodies in our new solar neighborhood.</description>
+      <description>The next step in improving our understanding of the local solar system is studying the orbits and movements of the celestial objects we've observed and developing sophisticated models so we can make accurate predictions about events in space that may impact our colony.</description>
       <requires>6100</requires>
+      <effects>
+        <unlock type="disaster_prediction">meteors</unlock>
+      </effects>
     </tech>
     <tech id="6120" lab_type="0" cost="50" icon_index="468">
       <name>Oribtal Mechanics</name>
-      <description>Orbital mechanics is the application of ballistics and Celestial Mechanics to the practical problems concerning the motion of rockets and other spacecraft. Orbital mechanics provides a foundation for us to design and deploy new spacecraft and space technologies.</description>
+      <description>Orbital Mechanics is the study of spacecraft trajectory and how to alleviate the effects of gravity as it tries to stop you from getting to where you want to go. Developing robust simulations of objects in orbit will be necessary if we want to deploy spacecraft and satellites.</description>
       <requires>6110</requires>
+    </tech>
+  </category>
+  <category name="Health and Wellness" icon_index="8">
+    <tech id="7010" lab_type="0" cost="12" icon_index="134">
+      <name>Colonial Epidemiology</name>
+      <description>Our medical experts are concerned that our colony's cramped living conditions and self-contained environment leave us at great risk of an epidemic devastating our population. By studying past outbreaks and simulating new ones, we can develop methods to detect the early stages of an epidemic, allowing us to enact a quarantine and limit the impact of any such outbreak.</description>
+      <effects>
+        <unlock type="disaster_prediction">plague</unlock>
+      </effects>
+    </tech>
+    <tech id="7020" lab_type="0" cost="80" icon_index="58">
+      <name>Nano-Immunology</name>
+      <description>Due to our recent advances in microbiology and nanotechnology, we are now theoretically able to eliminate all disease, assuming our colonists are comfortable with injecting themselves with swarms of tiny robotic warriors. This would not only boost colony morale, but permanently eliminate the threat of plagues.</description>
+      <requires>7010</requires>
+      <effects>
+        <unlock type="disaster_prediction">no_more_plagues_placeholder</unlock>
+        <modifier type="pop_morale">0.1</modifier>
+      </effects>
+    </tech>
+    <tech id="7030" lab_type="0" cost="20" icon_index="508">
+      <name>Environmental Psychology</name>
+      <description>Life on this world takes a toll, both physically and mentally. Increasing rations and mandating extra naps can help with the former, but addressing the latter will require understanding the effects of this new environment on our colonists' psyches and developing new coping techniques so that we can all get through these trying times together.</description>
+      <effects>
+        <modifier type="pop_morale">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="7040" lab_type="0" cost="20" icon_index="87">
+      <name>Centralized Pediatrics</name>
+      <description>Our colony's future survival depends upon our children. Unfortunately, its present survival depends upon every able-bodied adult working full-time and not taking parental leave. We need to research ways to offset the demands of childcare without undermining the family unit.</description>
+      <effects>
+        <unlock type="structure">SID_NURSERY</unlock>
+      </effects>
+    </tech>
+    <tech id="7050" lab_type="0" cost="22" icon_index="28">
+      <name>Nonterrestrial Embryology</name>
+      <description>Some of our health experts have raised concerns that conditions in our colony are adversely effecting the reproductive health of our colonists, citing lower-than-expected birth rates. While it's possible this is just due to the stress of establishing a new colony on a hostile planet or the recent destruction of our homeworld not putting our colonists "in the mood", our doctors have proposed a study to ensure there's nothing inherent to our new home impacting our fertility.</description>
+      <effects>
+        <modifier type="pop_fertility">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="7060" lab_type="0" cost="40" icon_index="22">
+      <name>Offspring Enhancement</name>
+      <description>A broad term encompassing everything from improved fertility treatments to eliminating congential disorders through embryonic gene editing, an Offpsring Enhancement program will provide our colony with a greater number of superior children and a longer-lived population, and slightly boost colony morale.</description>
+      <requires>7050</requires>
+      <effects>
+        <modifier type="pop_fertility">0.1</modifier>
+        <modifier type="pop_morale">0.02</modifier>
+        <modifier type="pop_mortality">0.02</modifier>
+      </effects>
+    </tech>
+    <tech id="7070" lab_type="0" cost="12" icon_index="1009">
+      <name>Pharmacology</name>
+      <description>Pharmacology is the study of chemicals interactions with biological systems - in short, how drugs effect people. If we are to maintain a healthy population on this new world, we will need the knowledge base and infrastructure to develop new medications to combat everything from disease to depression to headaches.</description>
+      <effects>
+        <modifier type="pop_mortality">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="8011" lab_type="0" cost="25" icon_index="128">
+      <name>Automated Diagnostic Examinations</name>
+      <description>Our health experts, AI researchers, and engineers have proposed a robotic medical assistant capable of performing routine tasks, which they believe will increase the capacity of our colony's healthcare force.</description>
+      <requires>5081,5050</requires>
+      <effects>
+        <modifier type="pop_mortality">0.1</modifier>
+      </effects>
     </tech>
   </category>
 </technology>
