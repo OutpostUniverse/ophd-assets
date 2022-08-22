@@ -137,14 +137,14 @@
   <category name="Computer Science &amp; Engineering" icon_index="3">
     <tech id="5000" lab_type="0" cost="50" icon_index="197">
       <name>Xeno Electronics</name>
-      <description>Our electronic equipment must be hardened to withstand the harsh conditions of this world. To maximize our colony's chance of survival, engineers on Earth built our electronics to the highest standards of radiation hardening. However, this will be unsustainable as our colony develops. Further research into the planet's radiation environment will allow us to develop more cost-efficient electronics.</description>
+      <description>Our electronic equipment must be hardened to withstand the harsh conditions of this world. To maximize our colony's chance of survival, engineers on Earth built our electronics to the highest standards of radiation hardening. However, this is like building a tank when you only need a car, and that resource cost will be unsustainable as our colony develops. Further research into the planet's radiation environment will allow us to develop more cost-efficient electronics.</description>
       <effects>
         <modifier type="structure_cost">0.01</modifier>
       </effects>
     </tech>
     <tech id="5010" lab_type="0" cost="75" icon_index="269">
       <name>3D Printed Circuits</name>
-      <description>Additive manufacturing, more commonly known as 3D printing, has existed as a concept since the mid 20th century, but did not become a viable large-scale manufacturing technique until nearly a century afterwards. Promising research applying these techniques to traditional printed circuits was unfortunately cut short by the sudden destruction of Earth, but our engineers are eager to pick up the torch.</description>
+      <description>Additive manufacturing (more commonly known as 3D printing) has existed as a concept since the mid-20th century but did not become a viable large-scale manufacturing technique until nearly a century later. Promising research applying these techniques to traditional printed circuits was unfortunately cut short by the sudden destruction of Earth, but our engineers are eager to pick up the torch.</description>
       <requires>5000</requires>
       <effects>
         <modifier type="maintenance_cost">0.03</modifier>
@@ -155,13 +155,18 @@
       <description>Nanotechnology typically conjures up images of a multitude of microscopic machines manipulating matter on the atomic level. Before we can build really tiny robots, we first need to be able to build really tiny electronics. This project seeks to explore new nanolithography techniques and ways to overcome some of the challenges involved in manufacturing precision circuitry on such a small scale.</description>
       <requires>5010</requires>
     </tech>
-    <tech id="5030" lab_type="1" cost="100" icon_index="332">
-      <name>Advanced ICs (Rename me)</name>
-      <requires>5020,3030</requires>
+    <tech id="5030" lab_type="1" cost="100" icon_index="106">
+      <name>Molecular Electronics</name>
+      <description>First theorized in the mid 20th century, single-molecule electronics refer to components assembled atom-by-atom, rather than being cut and molded from macro-scale materials. This project seeks to identify viable materials and scalable manufacturing techniques, and also overcome some of the issues with quantum mechanics involves when working on such small scales.</description>
+      <requires>5020</requires>
     </tech>
-    <tech id="5040" lab_type="1" cost="75" icon_index="14">
-      <name>Integrated Circuit Radiation Hardening</name>
+    <tech id="5040" lab_type="1" cost="150" icon_index="80">
+      <name>Self-Repairing Circuits</name>
+      <description>At a recent symposium, several of our researchers across various disciplines collaborated to produce a complex electrical system capable of reassembling itself from everything short of total destruction. Though only a proof of concept, the team is eager to expand upon their research which, if viable, should drastically improve the longevity of our colony's structures and rovers.</description>
       <requires>5030</requires>
+      <effects>
+        <modifier type="breakdown">0.2</modifier>
+      </effects>
     </tech>
     <tech id="5050" lab_type="0" cost="50" icon_index="136">
       <name>Robot Power System Refit</name>
@@ -172,9 +177,13 @@
       </effects>
     </tech>
     <tech id="5060" lab_type="1" cost="75" icon_index="186">
-      <name>Advanced Robotics</name>
-      <description>Allows for the development of advanced robotics.</description>
+      <name>Legged Robots</name>
+      <description>Legged robots offer several advantages over their wheeled cousins, chief among them the ability to navigate rough terrain. Much research was done into legged robot locomotion on Earth, and while many impressive prototype models were built, none were mass produced due to assembly complexity and power supply issues. Our robotics staff believe our technology has advanced enough to address both of those issues.</description>
       <requires>5050,5030</requires>
+      <effects>
+        <unlock type="robot">placeholder_spider_team_can_clear_mountains?</unlock>
+        <unlock type="robot">placeholder_or_maybe_let_dozers_do_that?</unlock>
+      </effects>
     </tech>
     <tech id="5070" lab_type="1" cost="100" icon_index="1014">
       <name>Humanoid Workers</name>
@@ -186,7 +195,7 @@
     </tech>
     <tech id="5080" lab_type="0" cost="75" icon_index="518">
       <name>Virtual Assistants</name>
-      <description>The 21st century saw the proliferation of Virtual Assistants, rudimentary software "intelligences" capable of assisting users in day-to-day tasks and responding to simple voice or text queries. Although the principles behind Virtual Assistants are well understood, as they were largely proprietary software products no practical implementations survived the destruction of Earth. Some of our researchers have proposed the development of a new Virtual Assistant to serve as a springboard for future Aritficial Intelligence research.</description>
+      <description>The 21st century saw the proliferation of Virtual Assistants, rudimentary software "intelligences" capable of assisting users in day-to-day tasks and responding to simple voice or text queries. Although the principles behind Virtual Assistants are well understood, as they were largely proprietary software products, no practical implementations survived the destruction of Earth. Some of our researchers have proposed the development of a new Virtual Assistant to serve as a springboard for future Aritficial Intelligence research.</description>
       <effects>
         <modifier type="pop_morale">0.01</modifier>
       </effects>
@@ -198,7 +207,7 @@
     </tech>
     <tech id="5082" lab_type="0" cost="55" icon_index="153">
       <name>Cybernetic Teleoperation</name>
-      <description>One of the greatest challenges of adapting to our new home has been finding ways to do more with fewer people. Currently, the various rovers employed by our colony require remote supervision and control by human technicians while they aren't performing other duties. Our AI researchers believe much of this burden could be offloaded onto a specialized vehicle control system, simultaneously allowing us to deploy more rovers and giving our technicians their lunch breaks back.</description>
+      <description>One of the greatest challenges of adapting to our new home has been finding ways to do more with fewer people. Currently, the various rovers employed by our colony require remote supervision and control by human technicians between their other duties. Our AI researchers believe much of this burden could be offloaded onto a specialized vehicle control system, simultaneously allowing us to deploy more rovers and giving our technicians their lunch breaks back.</description>
       <requires>5080</requires>
       <effects>
         <unlock type="structure">SID_ROBOT_COMMAND</unlock>
@@ -206,7 +215,7 @@
     </tech>
     <tech id="5055" lab_type="0" cost="70" icon_index="727">
       <name>Advanced Computer Guidance</name>
-      <description>Giving control of our rovers over to AI systems has been a resounding success, in that none of them have yet gone on a colony-destroying rampage. Some of our engineers have submitted a proposal for a redesigned Robot Command Center capable of supporting a greater number of active vehicles.</description>
+      <description>Giving control of our rovers to AI systems has been a resounding success, in that none of them have yet gone on a colony-destroying rampage. Some of our engineers have submitted a proposal for a redesigned Robot Command Center capable of supporting a greater number of active vehicles.</description>
       <requires>5081,5082</requires>
       <effects>
         <unlock type="structure">SID_ROBOT_COMMAND2</unlock>
@@ -222,19 +231,19 @@
     </tech>
     <tech id="5069" lab_type="1" cost="100" icon_index="990">
       <name>Artificial General Intelligence</name>
-      <description>Our AI research so far has produced several specialized programs that can simulate intelligence in very specific circumstances - our Virtual Assistants can "talk" to people, our rovers can "see" rocks. A few minutes of experimentation, however, reveals how sharply limited these "intelligences" really are. While creating an artificial consciousness on par with that of a human is still well beyond the realms of the possible, our researchers believe, while still a daunting task, they can unify our existing systems into a single, general-purpose intelligence capable of rudimentary reasoning, planning, and human interaction capabilities.</description>
+      <description>Our AI research so far has produced several specialized programs that  simulate intelligence in very specific circumstances - our Virtual Assistants can "talk" to people, our rovers can "see" rocks. A few minutes of experimentation, however, reveals how sharply limited these "intelligences" really are. While creating an artificial consciousness on par with that of a human is still well beyond the realms of the possible, our researchers believe, while still a daunting task, they can unify our existing systems into a single, general-purpose intelligence capable of rudimentary reasoning, planning, and human interaction capabilities.</description>
       <requires>5060,5083</requires>
     </tech>
     <tech id="5001" lab_type="0" cost="1" icon_index="98">
       <name>Systems Analysis</name>
-      <description>Since our colony represents humanity's first attempt at establishing a permanent offworld settlement, we have no idea how the technology and infrastructure we rely on for survival functions under real-world conditions. In order to better maintain these systems, and to reduce their general level of anxiety, our maintenance technicians have proposed a thorough analysis of the operating conditions and breakdown patterns of our colony's infrastructure technology.</description>
+      <description>Since our colony represents humanity's first attempt at establishing a permanent offworld settlement, we have no idea how the technology and infrastructure we rely on for survival function under real-world conditions. Our maintenance technicians have proposed a thorough analysis of the operating conditions and breakdown patterns of our colony's infrastructure technology to better maintain these systems, and to reduce their general level of anxiety.</description>
       <effects>
         <modifier type="maintenance_cost">0.02</modifier>
       </effects>
     </tech>
     <tech id="5084" lab_type="0" cost="100" icon_index="524">
       <name>Autonomous Surveyor Platform</name>
-      <description>During a recent excavation project, one of our RoboDiggers uncovered a vein of ore that our initial orbital scan of the planet failed to locate. Our geologists believe there to be several such potential mining sites and have proposed a fully autonomous robotic surveyor to help locate them.</description>
+      <description>During a recent excavation project, one of our RoboDiggers uncovered a vein of ore that our initial orbital scan of the planet failed to locate. Our geologists believe there may be several such mining sites and have proposed a fully autonomous robotic surveyor to help locate them.</description>
       <requires>5083</requires>
       <effects>
         <unlock type="robot">RID_EXPLORER_BOT</unlock>
@@ -242,7 +251,7 @@
     </tech>
     <tech id="5002" lab_type="0" cost="50" icon_index="581">
       <name>Predictive Maintenance</name>
-      <description>One of our maintenance technicians has proposed outfitting key systems with various sensors which would feed into a centralized database, allowing repair crews to monitor equipment performance trends and make minor corrective repairs as needed, preventing major breakdowns.</description>
+      <description>One of our maintenance technicians has proposed outfitting key systems with various sensors that would feed into a centralized database, allowing repair crews to monitor equipment performance trends and make minor corrective repairs as needed, preventing major breakdowns.</description>
       <requires>5001</requires>
       <effects>
         <modifier type="breakdown">0.05</modifier>
@@ -250,7 +259,7 @@
     </tech>
     <tech id="5003" lab_type="0" cost="50" icon_index="118">
       <name>Efficiency Engineering</name>
-      <description>Our factory workers, in collaboration with some of our researchers, have identified several common points on our factory assembly lines where slowdown occurs. This project will try to eliminate these issues and find other ways to increase our manufacturing efficiency.</description>
+      <description>Our factory workers, in collaboration with some of our researchers, have identified several common points on our factory assembly lines that are hampering productivity. This project will try to eliminate these inefficiencies and find other ways to increase our manufacturing output.</description>
       <requires>5001</requires>
       <effects>
         <unlock type="structure">placeholder_factory_production_upgrade</unlock>
@@ -258,7 +267,7 @@
     </tech>
     <tech id="5004" lab_type="0" cost="50" icon_index="104">
       <name>Researcher Optimization</name>
-      <description>A middle manager recent proposed establishing arbitrary productivity metrics for our scientists, punishing those that fail to meet their quotas and offering no rewards for those that do. We were going to fire him, but computer projections show it would actually make research go faster.</description>
+      <description>A middle manager recently proposed establishing arbitrary productivity metrics for our scientists, punishing those who fail to meet their quotas and offering no rewards for those that do. We were going to fire him, but computer projections show the quotas would actually make research go faster.</description>
       <requires>5001</requires>
       <effects>
         <unlock type="structure">placeholder_research_speed_upgrade</unlock>
@@ -266,7 +275,7 @@
     </tech>
     <tech id="5005" lab_type="0" cost="120" icon_index="45">
       <name>Administration Facility</name>
-      <description>Our efficiency studies have lead to several colonists declaring themselves Efficiency Experts, making it their job to optimize and eliminate waste as much as possible. They would like to design and build an Administration Facility where they may monitor our colony's overall efficiency.</description>
+      <description>Our efficiency studies have led to several colonists declaring themselves Efficiency Experts, making it their job to optimize and eliminate waste as much as possible. They would like to design and build an Administration Facility where they may monitor and improve our colony's overall efficiency.</description>
       <requires>5003,5004,5002</requires>
     </tech>
   </category>
