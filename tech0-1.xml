@@ -155,13 +155,18 @@
       <description>Nanotechnology typically conjures up images of a multitude of microscopic machines manipulating matter on the atomic level. Before we can build really tiny robots, we first need to be able to build really tiny electronics. This project seeks to explore new nanolithography techniques and ways to overcome some of the challenges involved in manufacturing precision circuitry on such a small scale.</description>
       <requires>5010</requires>
     </tech>
-    <tech id="5030" lab_type="1" cost="100" icon_index="332">
-      <name>Advanced ICs (Rename me)</name>
-      <requires>5020,3030</requires>
+    <tech id="5030" lab_type="1" cost="100" icon_index="106">
+      <name>Molecular Electronics</name>
+      <description>First theorized in the mid 20th century, single-molecule electronics refer to components assembled atom-by-atom, rather than being cut and molded from macro-scale materials. This project seeks to identify viable materials and scalable manufacturing techniques, and also overcome some of the issues with quantum mechanics involves when working on such small scales.</description>
+      <requires>5020</requires>
     </tech>
-    <tech id="5040" lab_type="1" cost="75" icon_index="14">
-      <name>Integrated Circuit Radiation Hardening</name>
+    <tech id="5040" lab_type="1" cost="150" icon_index="80">
+      <name>Self-Repairing Circuits</name>
+      <description>At a recent symposium, several of our researchers across various disciplines collaborated to produce a complex electrical system capable of reassembling itself from everything short of total destruction. Though only a proof of concept, the team is eager to expand upon their research which, if viable, should drastically improve the longevity of our colony's structures and rovers.</description>
       <requires>5030</requires>
+      <effects>
+        <modifier type="breakdown">0.2</modifier>
+      </effects>
     </tech>
     <tech id="5050" lab_type="0" cost="50" icon_index="136">
       <name>Robot Power System Refit</name>
