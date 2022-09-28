@@ -396,18 +396,26 @@
         <modifier type="pop_mortality">0.1</modifier>
       </effects>
     </tech>
+    <tech id="7031" lab_type="0" cost="65" icon_index="712">
+      <name>Biome Simulation</name>
+      <description>Our colonists have been clamoring for a simulated outdoor envrionment, just to have a taste of what it was like to live back on Earth. Based on our recent Agridome redesign work, we believe we can create such a space, providing some much-needed escapism.</description>
+      <requires>2005,7030</requires>
+      <effects>
+        <unlock type="structure">SID_PARK</unlock>
+      </effects>
+    </tech>
   </category>
   <category name="Biology" icon_index="1">
     <tech id="2001" lab_type="0" cost="40" icon_index="555">
       <name>Microbiology</name>
-      <description>The starship that brought us here carried several non-human passengers: various species of bacteria both in and on our bodies, entire biomes of microorganisms stored in soil samples to help "seed" this world's regolith for agricultural purposes, and despite our best efforts at sterilization and air filtration, several strains of unwanted molds and infectious diseases. Our researchers would like to study how these microorganisms grow and spread within our colony's self-contained environment.</description>
+      <description>The starship that brought us here carried several non-human passengers: various species of bacteria both in and on our bodies; entire biomes of microorganisms stored in soil samples to help "seed" this world's regolith for agricultural purposes; and, despite our best efforts at sterilization and air filtration, several strains of unwanted molds and infectious diseases. Our researchers would like to study how these microorganisms grow and evolve within our colony's self-contained environment.</description>
       <effects>
         <modifier type="maintenance_cost">0.03</modifier>
       </effects>
     </tech>
     <tech id="2021" lab_type="0" cost="0" icon_index="219">
       <name>Epigenetic Investigation</name>
-      <description>Several of our colonists have been complaining of chronic fatigue, and preliminary research suggests this so-called "space sickness" may actually be the result of a heretofore unknown genetic predisposition triggered by conditions in our new home. This project seeks to determine the exact mechanisms triggering "space sickness" and develop solutions, both medical and environmental, to alleviate the affected colonists.</description>
+      <description>Several of our colonists have been complaining of chronic fatigue, and preliminary research suggests this so-called "space sickness" may actually be the result of a heretofore unknown genetic predisposition triggered by the conditions of our new home. This project seeks to determine the exact mechanisms triggering "space sickness" and develop solutions, both medical and environmental, to alleviate the affected colonists.</description>
       <effects>
         <modifier type="pop_morale">0.03</modifier>
       </effects>
@@ -422,7 +430,7 @@
     </tech>
     <tech id="2022" lab_type="0" cost="0" icon_index="214">
       <name>Noninvasive Gene Therapy</name>
-      <description>Most gene therapy treatments require harvesting the patient's cells and modifying them outside the body. Techniques for modifying cells within a patient's body do exist and are easier to perform but more prone to rejection and other complications. Researching safer and more reliable vectors for in vivo modification should allow our doctors to make gene therapy treatments more widely available, increasing overall healthcare.</description>
+      <description>Most gene therapy treatments require harvesting the patient's cells and modifying them outside the body. Techniques for modifying cells within a patient's body do exist and are easier to perform but are more prone to rejection and other complications. Researching safer and more reliable vectors for in vivo modification should allow our doctors to make gene therapy treatments more widely available, increasing overall healthcare.</description>
       <requires>2021</requires>
       <effects>
         <unlock type="structure">SID_MEDICAL_CENTER_2</unlock>
@@ -430,7 +438,7 @@
     </tech>
     <tech id="2038" lab_type="1" cost="1000" icon_index="257">
       <name>Terraforming Microbes</name>
-      <description>After reviewing our Biomining project, our research director has proposed an adapation of the bioleaching process with the purpose of extracting oxygen, rather than metal, from the planet's crust. To this end, our geneticists will develop a synthetic microbe specifically engineered for breaking down rock into its component elements. At the same time, our robotics engineers will provide a delivery mechanism for the microbe by developing a RoboMiner variant capable of drilling Terraforming Wells, special facilities built atop deep-crust boreholes seeded with the terraforming microbe and designed to regulate microbe growth, distribute the extracted oxygen into the atmopshere, and filter out waste products. This is of course a monumental undertaking, but if all goes well, this planet could support a breathable atmosphere in our lifetime.</description>
+      <description>After reviewing our Biomining project, our research director has proposed an adapation of the bioleaching process with the purpose of extracting oxygen, rather than metal, from the planet's crust. To this end, our geneticists will develop a synthetic microbe specifically engineered for breaking down rock into its component elements. At the same time, our robotics engineers will provide a delivery mechanism for the microbe by developing a RoboMiner variant capable of drilling Terraforming Wells, special facilities built atop deep-crust boreholes seeded with the terraforming microbe and designed to regulate microbe growth, distribute the extracted oxygen into the atmopshere, and filter out waste products. This is, of course, a monumental undertaking, but this planet could support a breathable atmosphere in our lifetime if all goes well.</description>
       <requires>2026,5069</requires>
       <effects>
         <unlock type="robot">RID_TERRAFORMER</unlock>
@@ -444,19 +452,51 @@
         <unlock type="robot">PLACEHOLDER_MEDICINE_2</unlock>
       </effects>
     </tech>
-    <tech id="2025" lab_type="0" cost="0" icon_index="227">
-      <name>Crop Efficiency Modification</name>
-      <description>Humans have been manipulating the genomes of plants and animals for millenia through selective breeding; several gene editing techniques developed in the early 21st century merely allowed more direct control over the process. By modifying our crops to require less growing area our researchers hope to increase the overall yield of our Agridomes.</description>
+    <tech id="2025" lab_type="0" cost="70" icon_index="227">
+      <name>Crop Adaptation</name>
+      <description>Our Agridomes try to emulate optimal growing conditions, but millions of years of evolution did not prepare the food we eat to grow in a little glass dome on a hostile planet.  Targetted genome edits may make our crops better suited to the realities of their current environment, greatly boosting overall yields.</description>
+      <requires>2002,2023</requires>
       <effects>
-        <modifier type="agriculture">0.05</modifier>
+        <modifier type="agriculture">0.15</modifier>
       </effects>
     </tech>
     <tech id="2026" lab_type="1" cost="0" icon_index="206">
       <name>Biomining</name>
-      <description>Certain microbes secrete acidic compounds capable of dissolving rock into its component elements which are then consumed, leaving behind any metals the rock may have contained. Through genetic modification, we can vastly increase the metabolism of these microbes and better adapt them to this planet's environment and geology, allowing us to exploit this process to improve mining yields.</description>
+      <description>Certain microbes secrete acidic compounds capable of dissolving rock into its component elements, which are then consumed, leaving behind any metals the rock may have contained. Through genetic modification, we can vastly increase the metabolism of these microbes and better adapt them to this planet's environment and geology, allowing us to exploit this process to improve mining yields.</description>
       <requires>2024</requires>
       <effects>
         <unlock type="disaster_prediction">PLACEHOLDER_MINE_OR_MINER_UPGRADE</unlock>
+      </effects>
+    </tech>
+    <tech id="2002" lab_type="0" cost="40" icon_index="664">
+      <name>Agricultural Analysis</name>
+      <description>A review of our colony's agricultural output shows Agridome crop yields consistently failing to meet simulated projections. Possible causes for this discrepency include issues adapting crops to the new world or design flaws in the Agridome itself; regardless, our colonists are - incredibly enough - united in their opposition to death by starvation and demand we find ways to increase the amount of food we grow.</description>
+      <effects>
+        <modifier type="agriculture">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="2003" lab_type="0" cost="40" icon_index="686">
+      <name>Fungiculture</name>
+      <description>In addition to food, our Agridomes produce a significant amount of organic waste. Agridome workers have tried composting this waste, but the process is slow and the smell is getting to be unbearable - on particularly bad days the stink of rotting plant matter permeates the entire colony. Some of our colonists have suggested we set aside some growing space for the cultivation of various edible fungi, which would more quickly break down the plant waste, reducing the amount of resources required for agriculture without impacting food production.  Plan B is to dump it all out the nearest airlock.</description>
+      <requires>2002,2001</requires>
+      <effects>
+        <unlock type="disaster_prediction">PLACEHOLDER_REDUCED_AGRIDOME_RESOURCE_REQUIREMENTS</unlock>
+      </effects>
+    </tech>
+    <tech id="2004" lab_type="0" cost="50" icon_index="691">
+      <name>Advanced Hydroponic Growing Media</name>
+      <description>To maximize the limited growing space in our Agridomes, we rely on a combination of both traditional and soilless farming.  Our Agridome workers would like to experiment with different nutrient blends tailored to each individual plant in an attempt to improve the yields of our hydroponic crops.</description>
+      <requires>2002</requires>
+      <effects>
+        <modifier type="agriculture">0.05</modifier>
+      </effects>
+    </tech>
+    <tech id="2005" lab_type="0" cost="0" icon_index="54">
+      <name>Self-Contained Artificial Ecologies</name>
+      <description>One of the last pieces of cargo loaded onto the starship was a case containing the frozen, fertilized eggs of various species of fish, included so we might start an aquacultural program once our colony had developed enough to support one. Rather than try to retrofit the existing model, one scientist has proposed a completely redesigned Agridome, taking into account our recent work in fungiculture and hydroponics to create a holistic farming environment, maximizing food production while minimizing waste.</description>
+      <requires>2004,2003</requires>
+      <effects>
+        <unlock type="structure">SID_AGRIDOME_2</unlock>
       </effects>
     </tech>
   </category>
