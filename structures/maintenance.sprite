@@ -1,6 +1,6 @@
 <sprite version="0.99">
 	<imagesheet id="construction" src="construction_01.png" />
-	<imagesheet id="main" src="blank.png" />
+	<imagesheet id="main" src="maintenance.png" />
 	<imagesheet id="destroyed" src="destroyed.png" />
 
 	<action name="construction">
