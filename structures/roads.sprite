@@ -4,7 +4,7 @@
 	<imagesheet id="destroyed" src="destroyed.png" />
 
 	<action name="construction">
-		<frame sheetid="construction" delay="0" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
+		<frame sheetid="construction" x="0" y="0" width="128" height="128" anchorx="0" anchory="64" />
 	</action>
 
 	<action name="operational">
