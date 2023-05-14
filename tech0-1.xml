@@ -280,16 +280,16 @@
     </tech>
   </category>
   <category name="Astronomy" icon_index="0">
-    <tech id="6000" lab_type="0" cost="50" icon_index="472">
+    <tech id="6000" lab_type="0" cost="50" icon_index="813">
       <name>Astrophysics</name>
       <description>Astrophysics is the study of the physical properties of celestial bodies. Before departing Earth, this kind of research typically sought to gain a greater understanding of the fundamental particles that make up our universe. For now, we'll be content to figure out what kind of rocks the other planets are made up of.</description>
     </tech>
-    <tech id="6010" lab_type="0" cost="50" icon_index="869">
+    <tech id="6010" lab_type="0" cost="50" icon_index="793">
       <name>Solar Physics</name>
       <description>All of the data acquired on Earth about the local star is woefully insufficient, and also several million years out of date. This project seeks to gather detailed information about the properties, composition, and recent history of our new host.</description>
       <requires>6000</requires>
     </tech>
-    <tech id="6020" lab_type="0" cost="50" icon_index="667">
+    <tech id="6020" lab_type="0" cost="50" icon_index="817">
       <name>Solar Storm Prediction</name>
       <description>Solar Flares and Coronal Mass Ejections are relatively common, yet extremely dangerous stellar phenomena. On Earth, the ionizing radiation released by these events frequently played havoc with orbital systems, but the planet's ionosphere protected human civilization on the surface. Since this planet lacks any appreciable ionosphere, developing systems to monitor and predict Solar Storms is vital to our colony's continued survival as it will give our colonists time to evacuate the surface and avoid the worst effects.</description>
       <requires>6010</requires>
@@ -297,11 +297,11 @@
         <unlock type="disaster_prediction">solar_storm</unlock>
       </effects>
     </tech>
-    <tech id="6100" lab_type="0" cost="25" icon_index="311">
+    <tech id="6100" lab_type="0" cost="25" icon_index="825">
       <name>Basic Astronomy</name>
       <description>Astronomy is, colloquially, the study of everything not on Earth. Since we no longer live on Earth, our astronomers insist they be installed as the benevolent overlords of a new stellar technocracy, or at the very least, that they be given the opporunity to study the local solar system.</description>
     </tech>
-    <tech id="6110" lab_type="0" cost="50" icon_index="263">
+    <tech id="6110" lab_type="0" cost="50" icon_index="807">
       <name>Celestial Mechanics</name>
       <description>The next step in improving our understanding of the local solar system is studying the orbits and movements of the celestial objects we've observed and developing sophisticated models so we can make accurate predictions about events in space that may impact our colony.</description>
       <requires>6100</requires>
@@ -309,7 +309,7 @@
         <unlock type="disaster_prediction">meteors</unlock>
       </effects>
     </tech>
-    <tech id="6120" lab_type="0" cost="50" icon_index="468">
+    <tech id="6120" lab_type="0" cost="50" icon_index="794">
       <name>Oribtal Mechanics</name>
       <description>Orbital Mechanics is the study of spacecraft trajectory and how to alleviate the effects of gravity as it tries to stop you from getting to where you want to go. Developing robust simulations of objects in orbit will be necessary if we want to deploy spacecraft and satellites.</description>
       <requires>6110</requires>
