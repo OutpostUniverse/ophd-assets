@@ -160,10 +160,18 @@
     </tech>
     <tech id="4011" lab_type="0" cost="50" icon_index="360">
       <name>Road Microsurfacing</name>
-      <description>I haven't written a funny one in awhile, I should make this one a funny one.</description>
+      <description>On Earth, the quality and condition of roads were a common source of frustration for drivers. Clearly, these drivers never had to worry about dust storms strong enough to rip up pavement or potholes caused by meteor impacts. In order to build infrastructure capable of withstanding the physical conditions of a hostile environment, we will need to research new road construction materials and techniques.</description>
       <requires>4010</requires>
       <effects>
         <unlock type="structure">SID_ROAD_2</unlock>
+      </effects>
+    </tech>
+    <tech id="4012" lab_type="0" cost="50" icon_index="357">
+      <name>Tube Fortification</name>
+      <description>As our colony expands, managing traffic between our mines and smelters has become inreasingly difficult.  Some of our engineers believe that by reinforcing the structural supports in our colony's tubes and making some external modifications to make them ammenable to vehicle traffic, our mining trucks would be able to drice on top of our tubes as if they were paved roads.  Whether our colonists are willing to walk through a tube while a 50-ton truck is driving over it remains to be seen, however.</description>
+      <requires>4011</requires>
+      <effects>
+        <unlock type="disaster_prediction">PLACEHOLDER_TRUCKS_PATH_THRU_BUILDINGS</unlock>
       </effects>
     </tech>
   </category>
@@ -185,7 +193,7 @@
     </tech>
     <tech id="5020" lab_type="0" cost="75" icon_index="182">
       <name>Nanocircuitry</name>
-      <description>Nanotechnology typically conjures up images of a multitude of microscopic machines manipulating matter on the atomic level. Before we can build really tiny robots, we first need to be able to build really tiny electronics. This project seeks to explore new nanolithography techniques and ways to overcome some of the challenges involved in manufacturing precision circuitry on such a small scale.</description>
+      <description>Nanotechnology typically conjures up images of a multitude of microscopic machines manipulating matter on the molecular level. Before we can build really tiny robots, we first need to be able to build really tiny electronics. This project seeks to explore new nanolithography techniques and ways to overcome some of the challenges involved in manufacturing precision circuitry on such a small scale.</description>
       <requires>5010</requires>
     </tech>
     <tech id="5030" lab_type="1" cost="100" icon_index="772">
@@ -318,6 +326,14 @@
       <requires>5003,5004,5002</requires>
       <effects>
         <unlock type="structure">SID_ADMIN_FACILITY</unlock>
+      </effects>
+    </tech>
+    <tech id="5006" lab_type="0" cost="50" icon_index="20">
+      <name>Efficiency Oversight Committees</name>
+      <description>Our efficiency experts have proposed the formation of review boards to maximize our colony's efficiency. Composed of only the most pedantic experts in their fields, these boards will specialize in every aspect of life in our colony: every line of code written, every ore shipment processed, every meal prepared, will be scrutizined, anyalzed, and peer reviewed. After careful consideration, we offered our efficiency experts a shiny new office if they promised to drop the issue. They agreed.</description>
+      <requires>5005</requires>
+      <effects>
+        <unlock type="disaster_prediction">PLACEHOLDER_ADMIN_FACILITY_2</unlock>
       </effects>
     </tech>
   </category>
