@@ -168,7 +168,7 @@
     </tech>
     <tech id="4012" lab_type="0" cost="50" icon_index="357">
       <name>Tube Fortification</name>
-      <description>As our colony expands, managing traffic between our mines and smelters has become inreasingly difficult.  Some of our engineers believe that by reinforcing the structural supports in our colony's tubes and making some external modifications to make them ammenable to vehicle traffic, our mining trucks would be able to drice on top of our tubes as if they were paved roads.  Whether our colonists are willing to walk through a tube while a 50-ton truck is driving over it remains to be seen, however.</description>
+      <description>As our colony expands, managing traffic between our mines and smelters has become inreasingly difficult.  Some of our engineers believe that by reinforcing the structural supports in our colony's tubes and making some external modifications to make them ammenable to vehicle traffic, our mining trucks would be able to drive on top of our tubes as if they were paved roads.  Whether our colonists are willing to walk through a tube while a 50-ton truck is driving over it remains to be seen, however.</description>
       <requires>4011</requires>
       <effects>
         <unlock type="disaster_prediction">PLACEHOLDER_TRUCKS_PATH_THRU_BUILDINGS</unlock>
@@ -330,7 +330,7 @@
     </tech>
     <tech id="5006" lab_type="0" cost="50" icon_index="20">
       <name>Efficiency Oversight Committees</name>
-      <description>Our efficiency experts have proposed the formation of review boards to maximize our colony's efficiency. Composed of only the most pedantic experts in their fields, these boards will specialize in every aspect of life in our colony: every line of code written, every ore shipment processed, every meal prepared, will be scrutizined, anyalzed, and peer reviewed. After careful consideration, we offered our efficiency experts a shiny new office if they promised to drop the issue. They agreed.</description>
+      <description>Our efficiency experts have proposed the formation of review boards to maximize our colony's efficiency. Composed of only the most pedantic experts in their fields, these boards will specialize in every aspect of life in our colony - every line of code written, every ore shipment processed, every meal prepared - will be scrutizined, anyalzed, and peer reviewed. After careful consideration, we offered our efficiency experts a shiny new office if they promised to drop the issue. They agreed.</description>
       <requires>5005</requires>
       <effects>
         <unlock type="disaster_prediction">PLACEHOLDER_ADMIN_FACILITY_2</unlock>
