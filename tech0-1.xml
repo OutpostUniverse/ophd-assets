@@ -25,8 +25,12 @@
       <description>I have no clue, the only thing Google tells me about transponder arrays is something to do with seafloor mapping.  How is this supposed to help on a planet without any appreciable sources of water?</description>
       <requires>1020,5030</requires>
     </tech>
-    <tech id="1100" lab_type="1" cost="75" icon_index="455">
-      <name>Theoretical Physics</name>
+    <tech id="1100" lab_type="1" cost="75" icon_index="264">
+      <name>Nuclear Geophysics</name>
+      <description>After reviewing an anomaly in the geological survey data, our scientists have identified a natural deposit of plutonium and other radioactive isotopes not typically found in nature. It's unclear how this deposit formed, or when, but it provides a unique opportunity for our nuclear physicists to study several exotic isotopes previously thought only to exist in small quantities within a laboratory environment.</description>
+      <effects>
+        <unlock type="disaster_prediction">PLACEHOLDER_PHYSICS_RESEARCH_+15%</unlock>
+      </effects>
     </tech>
     <tech id="1110" lab_type="1" cost="100" icon_index="576">
       <name>High-Temperature Superconductivity</name>
@@ -124,14 +128,43 @@
     </tech>
   </category>
   <category name="Planetary Science" icon_index="4">
-    <tech id="4000" lab_type="0" cost="50" icon_index="0">
-      <name>Geology</name>
-      <description>Our current understanding of this planet's physical properties is ruidmentary, at best. A preliminary investigation into the geological properties and history of this world will give us a better understanding of how to adapt our colony to our environment and increase the efficiency of our mining operations.</description>
+    <tech id="4000" lab_type="0" cost="50" icon_index="634">
+      <name>Extraterrestrial Geology</name>
+      <description>Our current understanding of this planet's geology is ruidmentary, at best. A preliminary investigation into the physical properties and history of this world will give us a better understanding of how to adapt our colony to our environment and increase the efficiency of our mining operations.</description>
+      <effects>
+        <unlock type="disaster_prediction">PLACEHOLDER_ADD_ORE_TO_MINES</unlock>
+      </effects>
     </tech>
-    <tech id="4010" lab_type="0" cost="75" icon_index="614">
+    <tech id="4010" lab_type="0" cost="75" icon_index="321">
       <name>Mineralogy</name>
-      <description>Scientific discipline that is concerned with all aspects of our new planet's minerals, including their physical properties, chemical composition, internal crystal structure, and occurrence and distribution</description>
+      <description>While reviewing our colony's mining output reports, one of our geologists noticed the presence of several unexpected minerals which suggest this planet once hosted significant bodies of water. Based on this discovery, a mineralogical field study may reveal more of the physical history of this world and, more practically, provide a greater understanding of the geographical distribution of these minerals, boosting our mining productivity.</description>
       <requires>4000</requires>
+      <effects>
+        <unlock type="disaster_prediction">PLACEHOLDER_COMMON_ORE_YIELD_+2%</unlock>
+      </effects>
+    </tech>
+    <tech id="4020" lab_type="0" cost="5" icon_index="640">
+      <name>Meteorology</name>
+      <description>People have been trying to predict the weather for thousands of years, and it seems that habit will continue on this new world.  Unfortunately, the minor snafu of this world not being Earth has rendered all of our Earth-based weather models useless. In order to forecast and protect our colony from hazardous weather conditions, we will need to monitor and develop working models of global atmospheric conditions.</description>
+      <effects>
+        <unlock type="disaster_prediction">storms</unlock>
+      </effects>
+    </tech>
+    <tech id="4030" lab_type="0" cost="50" icon_index="646">
+      <name>Planetary Mapping Initiative</name>
+      <description>We already have a respectable understanding of this planet's topography based on photographs taken and data recorded from orbit prior to landing, though our understanding of conditions on the ground is still fairly lacking. Some of our bolder scientists have volunteered for manned surveys of the planet's surface, with the goal of identifying potential sites for future colonies.</description>
+      <requires>5050</requires>
+      <effects>
+        <unlock type="structure">SID_COMMAND_CENTER</unlock>
+      </effects>
+    </tech>
+    <tech id="4011" lab_type="0" cost="50" icon_index="360">
+      <name>Road Microsurfacing</name>
+      <description>I haven't written a funny one in awhile, I should make this one a funny one.</description>
+      <requires>4010</requires>
+      <effects>
+        <unlock type="structure">SID_ROAD_2</unlock>
+      </effects>
     </tech>
   </category>
   <category name="Computer Science &amp; Engineering" icon_index="3">
@@ -157,7 +190,7 @@
     </tech>
     <tech id="5030" lab_type="1" cost="100" icon_index="772">
       <name>Molecular Electronics</name>
-      <description>First theorized in the mid 20th century, single-molecule electronics refer to components assembled atom-by-atom, rather than being cut and molded from macro-scale materials. This project seeks to identify viable materials and scalable manufacturing techniques, and also overcome some of the issues with quantum mechanics involves when working on such small scales.</description>
+      <description>First theorized in the mid 20th century, single-molecule electronics refer to components assembled atom-by-atom, rather than being cut and molded from macro-scale materials. This project seeks to identify viable materials and scalable manufacturing techniques, and also overcome some of the issues with quantum mechanics involved when working on such small scales.</description>
       <requires>5020</requires>
     </tech>
     <tech id="5040" lab_type="1" cost="150" icon_index="326">
@@ -170,7 +203,7 @@
     </tech>
     <tech id="5050" lab_type="0" cost="50" icon_index="751">
       <name>Robot Power System Refit</name>
-      <description>Our colony relies on a multitude of robots, from rovers to industrial robots to automated maintenance drones, to assist with day-to-day tasks, though high power demands and limited battery life mean these robots spend most of their time recharging. Our recent breakthroughs in the design and manufacture of electronics has led to the development of smaller, more energy-efficient components. Redesigning our robots to use these components could decrease their average power consumption, increasing operational time and overall productivity.</description>
+      <description>Our colony relies on a multitude of robots, from rovers to industrial robots to automated maintenance drones, to assist with day-to-day tasks, though high power demands and limited battery life mean these robots spend most of their time recharging. Our recent breakthroughs in the design and manufacture of electronics has led to the development of smaller, more energy-efficient components. Redesigning our robots to use these components could decrease their average power consumption, extending the average life of our vehicle fuel cells.</description>
       <requires>5020</requires>
       <effects>
         <unlock type="disaster_prediction">PLACEHOLDER_LONGER_FUEL_CELL_LIFE</unlock>
@@ -454,7 +487,7 @@
     </tech>
     <tech id="2025" lab_type="0" cost="70" icon_index="227">
       <name>Crop Adaptation</name>
-      <description>Our Agridomes try to emulate optimal growing conditions, but millions of years of evolution did not prepare the food we eat to grow in a little glass dome on a hostile planet.  Targetted genome edits may make our crops better suited to the realities of their current environment, greatly boosting overall yields.</description>
+      <description>Our Agridomes try to emulate optimal growing conditions, but millions of years of evolution did not prepare the food we eat to grow in a little glass dome on a hostile planet.  Our scientists wish to explore using targetted genome edits to make our crops better suited to the realities of their current environment, greatly boosting overall yields.</description>
       <requires>2002,2023</requires>
       <effects>
         <modifier type="agriculture">0.15</modifier>
@@ -477,8 +510,8 @@
     </tech>
     <tech id="2003" lab_type="0" cost="40" icon_index="686">
       <name>Fungiculture</name>
-      <description>In addition to food, our Agridomes produce a significant amount of organic waste. Agridome workers have tried composting this waste, but the process is slow and the smell is getting to be unbearable - on particularly bad days the stink of rotting plant matter permeates the entire colony. Some of our colonists have suggested we set aside some growing space for the cultivation of various edible fungi, which would more quickly break down the plant waste, reducing the amount of resources required for agriculture without impacting food production.  Plan B is to dump it all out the nearest airlock.</description>
-      <requires>2002,2001</requires>
+      <description>In addition to food, our Agridomes produce a significant amount of organic waste. Agridome workers have tried composting this waste, but the process is slow and the smell is getting to be unbearable - on particularly bad days the stink of rotting plant matter permeates the entire colony. Some of our colonists have suggested we set aside some growing space for the cultivation of various edible fungi, which would more quickly break down the plant waste into fertilizer, reducing the amount of resources required for agriculture without impacting food production. Plan B is to dump it all out the nearest airlock.</description>
+      <requires>2001</requires>
       <effects>
         <unlock type="disaster_prediction">PLACEHOLDER_REDUCED_AGRIDOME_RESOURCE_REQUIREMENTS</unlock>
       </effects>
