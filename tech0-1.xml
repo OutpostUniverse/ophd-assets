@@ -4,7 +4,7 @@
       <name>Communications</name>
       <description>The rovers employed by our colony have limited onboard decision making capabilities, depending on constant communication with remote human or AI teleoperators for complex route planning and instructions beyond simple hard-coded directives. The existing Communications Towers in use by our colony are rough-and-ready designs adapted from systems used on Earth and ill-suited to the conditions on this planet.  By designing and deploying more specialized Communications Towers, we can expand the operational range of our rovers, opening up more of this planet and its resources to us.</description>
       <effects>
-        <unlock type="structure">SID_COMM_TOWER_2</unlock>
+        <unlock type="structure">CommTower2</unlock>
       </effects>
     </tech>
     <tech id="1010" lab_type="1" cost="100" icon_index="62">
@@ -12,7 +12,7 @@
       <description>Performance tests of our Communications Towers have discovered a 20% greater rate of signal degradation than expected, the result of a higher amount of noise caused by stellar radiation than expected. Our engineers believe that another redesign of the Communications Tower with superior noise-reduction equipment should greatly increase the coverage they provide.</description>
       <requires>1000,5030</requires>
       <effects>
-        <unlock type="structure">SID_COMM_TOWER_3</unlock>
+        <unlock type="structure">CommTower3</unlock>
       </effects>
     </tech>
     <tech id="1020" lab_type="0" cost="50" icon_index="81">
@@ -42,7 +42,7 @@
       <description>Our breakthrough in Plasma Containment has laid the groundwork out for a new power source.</description>
       <requires>1120</requires>
       <effects>
-        <unlock type="structure">SID_FUSION_REACTOR</unlock>
+        <unlock type="structure">FusionReactor</unlock>
       </effects>
     </tech>
   </category>
@@ -111,7 +111,7 @@
       <description>With our breakthroughs in Metallurgy and Miner Processing, our scientists and egineers have proposed a new Smelter design that's much more efficient than the design we have from Earth.</description>
       <requires>3210,3220</requires>
       <effects>
-        <unlock type="structure">SID_SMELTER_2</unlock>
+        <unlock type="structure">Smelter2</unlock>
       </effects>
     </tech>
     <tech id="3300" lab_type="0" cost="75" icon_index="154">
@@ -119,7 +119,7 @@
       <description>With the knowledge we've gained of building semiconductors in our new environment, our engineers have proposed a new version of the Solar Panel Array that can generate more energy in the specific conditions of our new planet.</description>
       <requires>5010,6010</requires>
       <effects>
-        <unlock type="structure">SID_SOLAR_PANEL2</unlock>
+        <unlock type="structure">SolarPanel2</unlock>
       </effects>
     </tech>
   </category>
@@ -210,7 +210,7 @@
       <description>One of the greatest challenges of adapting to our new home has been finding ways to do more with fewer people. Currently, the various rovers employed by our colony require remote supervision and control by human technicians between their other duties. Our AI researchers believe much of this burden could be offloaded onto a specialized vehicle control system, simultaneously allowing us to deploy more rovers and giving our technicians their lunch breaks back.</description>
       <requires>5080</requires>
       <effects>
-        <unlock type="structure">SID_ROBOT_COMMAND</unlock>
+        <unlock type="structure">RobotCommand</unlock>
       </effects>
     </tech>
     <tech id="5055" lab_type="0" cost="70" icon_index="727">
@@ -218,7 +218,7 @@
       <description>Giving control of our rovers to AI systems has been a resounding success, in that none of them have yet gone on a colony-destroying rampage. Some of our engineers have submitted a proposal for a redesigned Robot Command Center capable of supporting a greater number of active vehicles.</description>
       <requires>5081,5082</requires>
       <effects>
-        <unlock type="structure">SID_ROBOT_COMMAND2</unlock>
+        <unlock type="structure">RobotCommand2</unlock>
       </effects>
     </tech>
     <tech id="5083" lab_type="0" cost="1" icon_index="168">
@@ -343,7 +343,7 @@
       <name>Centralized Pediatrics</name>
       <description>Our colony's future survival depends upon our children. Unfortunately, its present survival depends upon every able-bodied adult working full-time and not taking parental leave. We need to research ways to offset the demands of childcare without undermining the family unit.</description>
       <effects>
-        <unlock type="structure">SID_NURSERY</unlock>
+        <unlock type="structure">Nursery</unlock>
       </effects>
     </tech>
     <tech id="7050" lab_type="0" cost="22" icon_index="28">
