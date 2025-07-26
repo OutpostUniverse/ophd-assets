@@ -26,6 +26,12 @@
 	/>
 
 	<product
+		id="9"
+		name="Maintenance Parts"
+		description="Maintenance Parts"
+	/>
+
+	<product
 		id="32"
 		name="Clothing"
 		description="Standard-issue jumpsuits are available for all colonists, but these were designed for functionality, not fashion. Offering regular clothing will allow people to demonstrate their style and individuality, improving colony morale."
