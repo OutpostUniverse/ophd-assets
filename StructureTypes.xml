@@ -75,16 +75,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="0">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Cargo Lander"
@@ -104,16 +94,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="2600">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="CHAP Facility"
@@ -162,16 +142,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="2600">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Command Center"
@@ -197,11 +167,6 @@
 			resource_1="75"
 			resource_2="75"
 			resource_3="40" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Commercial"
@@ -225,11 +190,6 @@
 			resource_0="8"
 			resource_1="5"
 			resource_2="5"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
 			resource_3="0" />
 	</Structure>
 	<Structure
@@ -255,11 +215,6 @@
 			resource_0="5"
 			resource_1="5"
 			resource_2="5"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
 			resource_3="0" />
 	</Structure>
 	<Structure
@@ -314,11 +269,6 @@
 			resource_1="10"
 			resource_2="6"
 			resource_3="5" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Laboratory"
@@ -343,11 +293,6 @@
 			resource_1="10"
 			resource_2="6"
 			resource_3="5" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Medical Center"
@@ -372,11 +317,6 @@
 			resource_1="5"
 			resource_2="3"
 			resource_3="3" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Mine Facility"
@@ -397,16 +337,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="2300">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Mine Shaft"
@@ -426,16 +356,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="100">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Nursery"
@@ -458,11 +378,6 @@
 		<BuildCost
 			resource_0="8"
 			resource_1="5"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
 			resource_2="0"
 			resource_3="0" />
 	</Structure>
@@ -489,11 +404,6 @@
 			resource_1="6"
 			resource_2="0"
 			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Recreation Center"
@@ -517,11 +427,6 @@
 			resource_0="10"
 			resource_1="8"
 			resource_2="4"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
 			resource_3="0" />
 	</Structure>
 	<Structure
@@ -547,11 +452,6 @@
 			resource_1="12"
 			resource_2="10"
 			resource_3="3" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Residential Facility"
@@ -574,11 +474,6 @@
 		<BuildCost
 			resource_0="8"
 			resource_1="8"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
 			resource_2="0"
 			resource_3="0" />
 	</Structure>
@@ -605,11 +500,6 @@
 			resource_1="5"
 			resource_2="0"
 			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Robot Command"
@@ -634,11 +524,6 @@
 			resource_1="15"
 			resource_2="10"
 			resource_3="5" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="SEED Factory"
@@ -658,16 +543,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="1700">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="SEED Lander"
@@ -688,16 +563,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="2600">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="SEED Power"
@@ -717,16 +582,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="2400">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="SEED Smelter"
@@ -747,16 +602,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="2200">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Smelter"
@@ -782,11 +627,6 @@
 			resource_1="15"
 			resource_2="5"
 			resource_3="5" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Solar Panel Array"
@@ -812,11 +652,6 @@
 			resource_1="20"
 			resource_2="5"
 			resource_3="5" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Solar Powersat Receiver Array"
@@ -842,11 +677,6 @@
 			resource_1="20"
 			resource_2="20"
 			resource_3="20" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Storage Tanks"
@@ -869,11 +699,6 @@
 		<BuildCost
 			resource_0="5"
 			resource_1="5"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
 			resource_2="0"
 			resource_3="0" />
 	</Structure>
@@ -900,11 +725,6 @@
 			resource_1="10"
 			resource_2="10"
 			resource_3="5" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Police"
@@ -930,11 +750,6 @@
 			resource_1="5"
 			resource_2="8"
 			resource_3="2" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Tube"
@@ -954,16 +769,6 @@
 		IsChapRequired="false"
 		IsCrimeTarget="false"
 		Priority="0">
-		<BuildCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Underground Factory"
@@ -988,11 +793,6 @@
 			resource_1="10"
 			resource_2="10"
 			resource_3="5" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Police (UG)"
@@ -1018,11 +818,6 @@
 			resource_1="5"
 			resource_2="8"
 			resource_3="2" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="University"
@@ -1047,11 +842,6 @@
 			resource_1="8"
 			resource_2="5"
 			resource_3="5" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Warehouse"
@@ -1074,11 +864,6 @@
 		<BuildCost
 			resource_0="5"
 			resource_1="5"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
 			resource_2="0"
 			resource_3="0" />
 	</Structure>
@@ -1105,11 +890,6 @@
 			resource_1="6"
 			resource_2="8"
 			resource_3="3" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
-			resource_2="0"
-			resource_3="0" />
 	</Structure>
 	<Structure
 		Name="Maintenance Facility"
@@ -1132,11 +912,6 @@
 		<BuildCost
 			resource_0="10"
 			resource_1="5"
-			resource_2="0"
-			resource_3="0" />
-		<OperationalCost
-			resource_0="0"
-			resource_1="0"
 			resource_2="0"
 			resource_3="0" />
 	</Structure>
