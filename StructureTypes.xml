@@ -56,8 +56,6 @@
 	<Structure
 		Name="Air Shaft"
 		ImagePath="structures/air_shaft.sprite"
-		TurnsToBuild="0"
-		MaxAge="0"
 		IntegrityDecayRate="0"
 		IsSelfSustained="false"
 		IsRepairable="true"
@@ -116,7 +114,6 @@
 		Name="Command Center"
 		ImagePath="structures/command_center.sprite"
 		TurnsToBuild="4"
-		MaxAge="0"
 		FoodStorageCapacity="250"
 		OreStorageCapacity="62"
 		CommRange="15"
@@ -561,8 +558,6 @@
 	<Structure
 		Name="Tube"
 		ImagePath="structures/tubes.sprite"
-		TurnsToBuild="0"
-		MaxAge="0"
 		IntegrityDecayRate="0"
 		IsSelfSustained="false"
 		IsRepairable="true"
