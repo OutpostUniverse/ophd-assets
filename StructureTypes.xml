@@ -56,7 +56,6 @@
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 	>
 	</Structure>
 	<Structure
@@ -68,7 +67,6 @@
 		IsSelfSustained="true"
 		IsRepairable="false"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2600">
 	</Structure>
 	<Structure
@@ -79,7 +77,6 @@
 		EnergyRequired="10"
 		RequiredWorkers="2"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2100">
 		<BuildCost
 			resource_0="15"
@@ -101,7 +98,6 @@
 		IsSelfSustained="true"
 		IsRepairable="false"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2600">
 	</Structure>
 	<Structure
@@ -115,7 +111,6 @@
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2500">
 		<BuildCost
 			resource_0="100"
@@ -147,7 +142,6 @@
 		CommRange="10"
 		IsSelfSustained="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="300">
 		<BuildCost
 			resource_0="5"
@@ -186,7 +180,6 @@
 		EnergyRequired="3"
 		IntegrityDecayRate="2"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="600">
 		<BuildCost
 			resource_0="20"
@@ -234,7 +227,6 @@
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2300">
 	</Structure>
 	<Structure
@@ -245,7 +237,6 @@
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="100">
 	</Structure>
 	<Structure
@@ -330,7 +321,6 @@
 		MaxAge="150"
 		IsSelfSustained="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="200">
 		<BuildCost
 			resource_0="5"
@@ -363,7 +353,6 @@
 		EnergyRequired="5"
 		RequiredWorkers="2"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="1700">
 	</Structure>
 	<Structure
@@ -375,7 +364,6 @@
 		IsSelfSustained="true"
 		IsRepairable="false"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2600">
 	</Structure>
 	<Structure
@@ -385,7 +373,6 @@
 		MaxAge="150"
 		EnergyProduced="50"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2400">
 	</Structure>
 	<Structure
@@ -398,7 +385,6 @@
 		OreStorageCapacity="125"
 		RequiredWorkers="2"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2200">
 	</Structure>
 	<Structure
@@ -490,7 +476,6 @@
 		EnergyRequired="5"
 		PoliceRange="5"
 		RequiredWorkers="3"
-		IsCrimeTarget="false"
 		Priority="1300">
 		<BuildCost
 			resource_0="8"
@@ -504,7 +489,6 @@
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 	>
 	</Structure>
 	<Structure
@@ -531,7 +515,6 @@
 		EnergyRequired="1"
 		PoliceRange="5"
 		RequiredWorkers="3"
-		IsCrimeTarget="false"
 		Priority="1200">
 		<BuildCost
 			resource_0="8"
