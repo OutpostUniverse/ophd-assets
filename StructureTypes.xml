@@ -37,8 +37,6 @@
 		FoodProduced="10"
 		FoodStorageCapacity="1000"
 		RequiredWorkers="1"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="2000">
 		<BuildCost
@@ -57,9 +55,7 @@
 		ImagePath="structures/air_shaft.sprite"
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 	>
 	</Structure>
 	<Structure
@@ -71,7 +67,6 @@
 		IsSelfSustained="true"
 		IsRepairable="false"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2600">
 	</Structure>
 	<Structure
@@ -81,9 +76,7 @@
 		MaxAge="600"
 		EnergyRequired="10"
 		RequiredWorkers="2"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2100">
 		<BuildCost
 			resource_0="15"
@@ -105,7 +98,6 @@
 		IsSelfSustained="true"
 		IsRepairable="false"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2600">
 	</Structure>
 	<Structure
@@ -118,9 +110,7 @@
 		CommRange="15"
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2500">
 		<BuildCost
 			resource_0="100"
@@ -135,8 +125,6 @@
 		MaxAge="500"
 		EnergyRequired="2"
 		RequiredWorkers="1"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="500">
 		<BuildCost
@@ -153,9 +141,7 @@
 		EnergyRequired="3"
 		CommRange="10"
 		IsSelfSustained="true"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="300">
 		<BuildCost
 			resource_0="5"
@@ -172,7 +158,6 @@
 		IntegrityDecayRate="2"
 		RequiredWorkers="1"
 		RequiredScientists="2"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="2400">
@@ -194,9 +179,7 @@
 		MaxAge="500"
 		EnergyRequired="3"
 		IntegrityDecayRate="2"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="600">
 		<BuildCost
 			resource_0="20"
@@ -210,7 +193,6 @@
 		TurnsToBuild="4"
 		MaxAge="500"
 		EnergyRequired="1"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="600">
@@ -228,8 +210,6 @@
 		EnergyRequired="5"
 		RequiredWorkers="1"
 		RequiredScientists="2"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="1900">
 		<BuildCost
@@ -246,9 +226,7 @@
 		RawOreStorageCapacity="125"
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2300">
 	</Structure>
 	<Structure
@@ -258,9 +236,7 @@
 		MaxAge="1200"
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="100">
 	</Structure>
 	<Structure
@@ -271,8 +247,6 @@
 		EnergyRequired="2"
 		RequiredWorkers="1"
 		RequiredScientists="1"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="1800">
 		<BuildCost
@@ -288,8 +262,6 @@
 		MaxAge="500"
 		EnergyRequired="1"
 		RequiredWorkers="1"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="1400">
 		<BuildCost
@@ -305,8 +277,6 @@
 		MaxAge="500"
 		EnergyRequired="2"
 		RequiredWorkers="2"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="1100">
 		<BuildCost
@@ -322,8 +292,6 @@
 		MaxAge="500"
 		EnergyRequired="5"
 		RequiredWorkers="2"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="900">
 		<BuildCost
@@ -338,8 +306,6 @@
 		TurnsToBuild="2"
 		MaxAge="500"
 		EnergyRequired="2"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="900">
 		<BuildCost
@@ -354,9 +320,7 @@
 		TurnsToBuild="2"
 		MaxAge="150"
 		IsSelfSustained="true"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="200">
 		<BuildCost
 			resource_0="5"
@@ -372,7 +336,6 @@
 		EnergyRequired="5"
 		RequiredWorkers="4"
 		RobotCommandCapacity="10"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="800">
@@ -389,9 +352,7 @@
 		MaxAge="150"
 		EnergyRequired="5"
 		RequiredWorkers="2"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="1700">
 	</Structure>
 	<Structure
@@ -403,7 +364,6 @@
 		IsSelfSustained="true"
 		IsRepairable="false"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2600">
 	</Structure>
 	<Structure
@@ -412,9 +372,7 @@
 		TurnsToBuild="5"
 		MaxAge="150"
 		EnergyProduced="50"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2400">
 	</Structure>
 	<Structure
@@ -426,9 +384,7 @@
 		RawOreStorageCapacity="250"
 		OreStorageCapacity="125"
 		RequiredWorkers="2"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 		Priority="2200">
 	</Structure>
 	<Structure
@@ -441,7 +397,6 @@
 		OreStorageCapacity="200"
 		IntegrityDecayRate="2"
 		RequiredWorkers="4"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="2200">
@@ -457,7 +412,6 @@
 		TurnsToBuild="4"
 		MaxAge="1000"
 		SolarEnergyProduced="50"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="2400">
@@ -473,7 +427,6 @@
 		TurnsToBuild="4"
 		MaxAge="1000"
 		SolarEnergyProduced="2000"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="2400">
@@ -490,7 +443,6 @@
 		MaxAge="500"
 		EnergyRequired="1"
 		OreStorageCapacity="250"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="1500">
@@ -507,7 +459,6 @@
 		MaxAge="600"
 		EnergyRequired="10"
 		RequiredWorkers="4"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="1700">
@@ -525,9 +476,6 @@
 		EnergyRequired="5"
 		PoliceRange="5"
 		RequiredWorkers="3"
-		IsRepairable="true"
-		IsChapRequired="true"
-		IsCrimeTarget="false"
 		Priority="1300">
 		<BuildCost
 			resource_0="8"
@@ -540,9 +488,7 @@
 		ImagePath="structures/tubes.sprite"
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
-		IsRepairable="true"
 		IsChapRequired="false"
-		IsCrimeTarget="false"
 	>
 	</Structure>
 	<Structure
@@ -552,7 +498,6 @@
 		MaxAge="600"
 		EnergyRequired="10"
 		RequiredWorkers="2"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="1700">
@@ -570,9 +515,6 @@
 		EnergyRequired="1"
 		PoliceRange="5"
 		RequiredWorkers="3"
-		IsRepairable="true"
-		IsChapRequired="true"
-		IsCrimeTarget="false"
 		Priority="1200">
 		<BuildCost
 			resource_0="8"
@@ -588,8 +530,6 @@
 		EnergyRequired="1"
 		RequiredWorkers="1"
 		RequiredScientists="3"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="400">
 		<BuildCost
@@ -605,7 +545,6 @@
 		MaxAge="500"
 		EnergyRequired="1"
 		RequiredWorkers="1"
-		IsRepairable="true"
 		IsChapRequired="false"
 		IsCrimeTarget="true"
 		Priority="700">
@@ -623,8 +562,6 @@
 		EnergyRequired="4"
 		RequiredWorkers="1"
 		RequiredScientists="1"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="1000">
 		<BuildCost
@@ -639,8 +576,6 @@
 		TurnsToBuild="5"
 		MaxAge="200"
 		EnergyRequired="4"
-		IsRepairable="true"
-		IsChapRequired="true"
 		IsCrimeTarget="true"
 		Priority="1600">
 		<BuildCost
