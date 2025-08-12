@@ -1,6 +1,7 @@
 <Structures>
 	<Structure
 		Name="Null"
+		Description=""
 		ImagePath=""
 		TurnsToBuild="0"
 		MaxAge="0"
@@ -30,6 +31,7 @@
 	</Structure>
 	<Structure
 		Name="Agricultural Dome"
+		Description="Food Production"
 		ImagePath="structures/agridome.sprite"
 		TurnsToBuild="3"
 		MaxAge="600"
@@ -52,6 +54,7 @@
 	</Structure>
 	<Structure
 		Name="Air Shaft"
+		Description="Tube"
 		ImagePath="structures/air_shaft.sprite"
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
@@ -60,6 +63,7 @@
 	</Structure>
 	<Structure
 		Name="Cargo Lander"
+		Description="Lander"
 		ImagePath="structures/lander_0.sprite"
 		TurnsToBuild="1"
 		MaxAge="50"
@@ -71,6 +75,7 @@
 	</Structure>
 	<Structure
 		Name="CHAP Facility"
+		Description="Life Support"
 		ImagePath="structures/chap.sprite"
 		TurnsToBuild="5"
 		MaxAge="600"
@@ -91,6 +96,7 @@
 	</Structure>
 	<Structure
 		Name="Colonist Lander"
+		Description="Lander"
 		ImagePath="structures/lander_1.sprite"
 		TurnsToBuild="1"
 		MaxAge="50"
@@ -102,6 +108,7 @@
 	</Structure>
 	<Structure
 		Name="Command Center"
+		Description="Command"
 		ImagePath="structures/command_center.sprite"
 		TurnsToBuild="4"
 		FoodStorageCapacity="250"
@@ -120,6 +127,7 @@
 	</Structure>
 	<Structure
 		Name="Commercial"
+		Description="Commercial"
 		ImagePath="structures/commercial.sprite"
 		TurnsToBuild="3"
 		MaxAge="500"
@@ -135,6 +143,7 @@
 	</Structure>
 	<Structure
 		Name="Communications Tower"
+		Description="Communication"
 		ImagePath="structures/communications_tower.sprite"
 		TurnsToBuild="2"
 		MaxAge="600"
@@ -151,6 +160,7 @@
 	</Structure>
 	<Structure
 		Name="Fusion Reactor"
+		Description="Energy Production"
 		ImagePath="structures/fusion_reactor.sprite"
 		TurnsToBuild="10"
 		MaxAge="1000"
@@ -174,6 +184,7 @@
 	</Structure>
 	<Structure
 		Name="Hot Laboratory"
+		Description="Laboratory"
 		ImagePath="structures/labo_surface.sprite"
 		TurnsToBuild="5"
 		MaxAge="500"
@@ -189,6 +200,7 @@
 	</Structure>
 	<Structure
 		Name="Laboratory"
+		Description="Laboratory"
 		ImagePath="structures/laboratory_underground.sprite"
 		TurnsToBuild="4"
 		MaxAge="500"
@@ -204,6 +216,7 @@
 	</Structure>
 	<Structure
 		Name="Medical Center"
+		Description="Medical Center"
 		ImagePath="structures/medical.sprite"
 		TurnsToBuild="4"
 		MaxAge="500"
@@ -220,6 +233,7 @@
 	</Structure>
 	<Structure
 		Name="Mine Facility"
+		Description="Mine Facility"
 		ImagePath="structures/mine_facility.sprite"
 		TurnsToBuild="2"
 		MaxAge="1200"
@@ -231,6 +245,7 @@
 	</Structure>
 	<Structure
 		Name="Mine Shaft"
+		Description="UNDEFINED"
 		ImagePath="structures/mine_shaft.sprite"
 		TurnsToBuild="2"
 		MaxAge="1200"
@@ -241,6 +256,7 @@
 	</Structure>
 	<Structure
 		Name="Nursery"
+		Description="Nursery"
 		ImagePath="structures/nursery_01.sprite"
 		TurnsToBuild="4"
 		MaxAge="500"
@@ -257,6 +273,7 @@
 	</Structure>
 	<Structure
 		Name="Park / Reservoir"
+		Description="Park / Reservoir"
 		ImagePath="structures/park.sprite"
 		TurnsToBuild="3"
 		MaxAge="500"
@@ -272,6 +289,7 @@
 	</Structure>
 	<Structure
 		Name="Recreation Center"
+		Description="Recreation Center"
 		ImagePath="structures/recreation_center.sprite"
 		TurnsToBuild="4"
 		MaxAge="500"
@@ -287,6 +305,7 @@
 	</Structure>
 	<Structure
 		Name="Red Light District"
+		Description="Residential"
 		ImagePath="structures/red_light_district.sprite"
 		TurnsToBuild="4"
 		MaxAge="500"
@@ -302,6 +321,7 @@
 	</Structure>
 	<Structure
 		Name="Residential Facility"
+		Description="Residential"
 		ImagePath="structures/residential_1.sprite"
 		TurnsToBuild="2"
 		MaxAge="500"
@@ -316,6 +336,7 @@
 	</Structure>
 	<Structure
 		Name="Road"
+		Description="Road"
 		ImagePath="structures/roads.sprite"
 		TurnsToBuild="2"
 		MaxAge="150"
@@ -330,6 +351,7 @@
 	</Structure>
 	<Structure
 		Name="Robot Command"
+		Description="Robot Command Center"
 		ImagePath="structures/robot_control.sprite"
 		TurnsToBuild="3"
 		MaxAge="500"
@@ -347,6 +369,7 @@
 	</Structure>
 	<Structure
 		Name="SEED Factory"
+		Description="Factory"
 		ImagePath="structures/seed_1.sprite"
 		TurnsToBuild="8"
 		MaxAge="150"
@@ -357,6 +380,7 @@
 	</Structure>
 	<Structure
 		Name="SEED Lander"
+		Description="Lander"
 		ImagePath="structures/seed_0.sprite"
 		TurnsToBuild="1"
 		MaxAge="50"
@@ -368,6 +392,7 @@
 	</Structure>
 	<Structure
 		Name="SEED Power"
+		Description="Energy Production"
 		ImagePath="structures/seed_1.sprite"
 		TurnsToBuild="5"
 		MaxAge="150"
@@ -377,6 +402,7 @@
 	</Structure>
 	<Structure
 		Name="SEED Smelter"
+		Description="Raw Ore Processing"
 		ImagePath="structures/seed_1.sprite"
 		TurnsToBuild="6"
 		MaxAge="150"
@@ -389,6 +415,7 @@
 	</Structure>
 	<Structure
 		Name="Smelter"
+		Description="Raw Ore Processing"
 		ImagePath="structures/smelter.sprite"
 		TurnsToBuild="9"
 		MaxAge="600"
@@ -408,6 +435,7 @@
 	</Structure>
 	<Structure
 		Name="Solar Panel Array"
+		Description="Energy Production"
 		ImagePath="structures/solar_array1.sprite"
 		TurnsToBuild="4"
 		MaxAge="1000"
@@ -423,6 +451,7 @@
 	</Structure>
 	<Structure
 		Name="Solar Powersat Receiver Array"
+		Description="Energy Production"
 		ImagePath="structures/solar_plant.sprite"
 		TurnsToBuild="4"
 		MaxAge="1000"
@@ -438,6 +467,7 @@
 	</Structure>
 	<Structure
 		Name="Storage Tanks"
+		Description="Storage"
 		ImagePath="structures/storage_tanks.sprite"
 		TurnsToBuild="2"
 		MaxAge="500"
@@ -454,6 +484,7 @@
 	</Structure>
 	<Structure
 		Name="Surface Factory"
+		Description="Factory"
 		ImagePath="structures/factory_surface.sprite"
 		TurnsToBuild="7"
 		MaxAge="600"
@@ -470,6 +501,7 @@
 	</Structure>
 	<Structure
 		Name="Police"
+		Description="Police"
 		ImagePath="structures/police_surface.sprite"
 		TurnsToBuild="4"
 		MaxAge="500"
@@ -485,6 +517,7 @@
 	</Structure>
 	<Structure
 		Name="Tube"
+		Description="Tube"
 		ImagePath="structures/tubes.sprite"
 		IntegrityDecayRate="0"
 		IsSelfSustained="true"
@@ -493,6 +526,7 @@
 	</Structure>
 	<Structure
 		Name="Underground Factory"
+		Description="Factory"
 		ImagePath="structures/factory_underground.sprite"
 		TurnsToBuild="4"
 		MaxAge="600"
@@ -509,6 +543,7 @@
 	</Structure>
 	<Structure
 		Name="Police (UG)"
+		Description="Police"
 		ImagePath="structures/police_underground.sprite"
 		TurnsToBuild="3"
 		MaxAge="500"
@@ -524,6 +559,7 @@
 	</Structure>
 	<Structure
 		Name="University"
+		Description="University"
 		ImagePath="structures/university.sprite"
 		TurnsToBuild="4"
 		MaxAge="500"
@@ -540,6 +576,7 @@
 	</Structure>
 	<Structure
 		Name="Warehouse"
+		Description="Warehouse"
 		ImagePath="structures/warehouse.sprite"
 		TurnsToBuild="2"
 		MaxAge="500"
@@ -556,6 +593,7 @@
 	</Structure>
 	<Structure
 		Name="Recycling Facility"
+		Description="Recycling"
 		ImagePath="structures/recycling.sprite"
 		TurnsToBuild="4"
 		MaxAge="500"
@@ -572,6 +610,7 @@
 	</Structure>
 	<Structure
 		Name="Maintenance Facility"
+		Description="Maintenance Facility"
 		ImagePath="structures/maintenance.sprite"
 		TurnsToBuild="5"
 		MaxAge="200"
