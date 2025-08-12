@@ -245,7 +245,7 @@
 	</Structure>
 	<Structure
 		Name="Mine Shaft"
-		Description="UNDEFINED"
+		Description="Mine Shaft"
 		ImagePath="structures/mine_shaft.sprite"
 		TurnsToBuild="2"
 		MaxAge="1200"
