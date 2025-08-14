@@ -327,6 +327,7 @@
 		MaxAge="500"
 		EnergyRequired="2"
 		ResidentialCapacity="25"
+		BioWasteCapacity="1000"
 		IsCrimeTarget="true"
 		Priority="900">
 		<BuildCost
