@@ -602,6 +602,7 @@
 		EnergyRequired="4"
 		RequiredWorkers="1"
 		RequiredScientists="1"
+		BioWasteProcessingCapacity="300"
 		IsCrimeTarget="true"
 		Priority="1000">
 		<BuildCost
