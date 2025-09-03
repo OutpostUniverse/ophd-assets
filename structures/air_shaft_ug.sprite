@@ -1,5 +1,5 @@
 <sprite version="0.99">
-	<imagesheet id="main" src="air_shaft.png" />
+	<imagesheet id="main" src="air_shaft_ug.png" />
 	<imagesheet id="destroyed" src="destroyed.png" />
 
 	<action name="operational">
